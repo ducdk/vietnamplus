@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/fonts/stylesheet.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./model/styles.css">
+    <link rel="stylesheet" href="./css//lyricer.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="loading" class="fixed flex flex-col h-[100vh] items-center justify-center loading w-[100vw]">
+        <div class="plus relative mt-[-40px]">
+            <div class="loading-img">
+                <img src="./images/loading.png" alt="" srcset="">
+            </div>
+            <div class="circle">
+                <div class="wave"></div>
+            </div>
+        </div>
+        <div id="loading-text" class="font-[20px] text-[#CD1414] text-center">Nguồn sáng tạo vươn xa...</div>
+        <div id="loading-click" class="font-[20px] text-[#CD1414] text-center hidden cursor-pointer" onclick="start()">
+            Nhấn để bắt đầu</div>
+    </div>
+
+
+    <div class="container-wrap flex justify-center items-center">
+        <div class="vnp-video relative">
+            <video id="vnp-video-modau">
+                <source src="https://rr5---sn-un57sne7.c.drive.google.com/videoplayback?expire=1698274879&ei=D3Q5ZYaHOpfBp84P4u2OkAY&ip=2a09:bac5:d45f:16d2::246:70&cp=QVROWkNfU1hVSlhPOm5qaXQwVTM0QWdqZVhYR2hCYW10VzJZSEJJQVNWOHd3TmVmeWd6b0Myd0I&id=03bab6df51de2e06&itag=22&source=webdrive&requiressl=yes&xpc=EghotM6WJ3oBAQ==&mh=7j&mm=32&mn=sn-un57sne7&ms=su&mv=m&mvi=5&pl=43&ttl=transient&susc=dr&driveid=1jc6K4bqzntRCfQ8pEl8N6R-M-rw1-2DB&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=265.891&lmt=1698073696730014&mt=1698263817&subapp=DRIVE_WEB_FILE_VIEWER&txp=0006224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,xpc,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AGM4YrMwRQIgf1jdKh3Rc859BhBNsYIKeOPC9Wcd2ZRjPnrjilTWXRQCIQCJh_f9GN4m_zaX5RFmCyAuxV9ZH9RBQGEK-eh7QipANQ==&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AK1ks_kwRQIgW45xVtRslGVfTuVLo5-6De2Jp3G9-Bp7QZ6ZavWbKDoCIQCRasJ4NxEPh2giSPf9z0qtSDD26WjKHCbmdgoXGxvWDA==&cpn=QwMNT7xuLz7Rf_Rm&c=WEB_EMBEDDED_PLAYER&cver=1.20231022.00.01" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="vnp-play absolute top-0 left-0 w-[100%] h-[100%] flex items-center justify-center" onclick="start()">
+                <img src="./images/play.svg" alt="" srcset="" class="w-[120px] h-[120px] cursor-pointer">
+            </div>
+            <div class="vnp-content">
+                <div class="font-montserrat text-[20px]">#Tổng Biên tập Báo Nhân Dân</div>
+                <div class="font-butler text-[40px] font-bold">Mr. Hung Nguyen</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-1">
+        <div class="container-wrap flex justify-center items-center">
+            <div class="container mx-auto vnp-start flex flex-col justify-center items-center gap-6">
+                <div class="vnp-logo">
+                    <img src="./images/logo.png" alt="" srcset="">
+                </div>
+                <div class="vnp-title font-butler text-[64px] font-bold text-center">
+                    HÀNH TRÌNH 15 NĂM VIETNAMPLUS
+                </div>
+                <div class="vnp-content-2 capitalize font-montserrat font-semibold text-[30px] text-[#696969]">
+                    <span>Hành trình 15 năm của VietnamPlus </span>
+                    <span>Gắn liền với những ý tưởng sáng tạo </span>
+                    <span>mang tính đột phá, khơi nguồn </span>
+                    <span>cho nhiều trào lưu báo chí tại Việt Nam </span>
+                    <span>như Longform, Báo chí Dữ liệu, Báo chí Giải pháp…</span>
+                </div>
+    
+                <div class="vnp-social flex gap-4 mt-40">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/sfb.svg" alt="" srcset="">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/stt.png" alt="" srcset="">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/syt.svg" alt="" srcset="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-wrap flex justify-center items-center">
+            <div class="container mx-auto vnp-start flex justify-center items-center gap-6 pt-[132px] pb-[132px]">
+                <div class="flex flex-1 justify-end vnp-dauan">
+                    <img src="./images/dauan/anh1.png" alt="" srcset="" class="w-full">
+                </div>
+                <div class="vnp-dauan-list flex flex-col gap-4 flex-1">
+                    <div class="vnp-dauan-item relative">
+                        <div class="vnp-dauan-stt font-butler text-[105px] font-bold">01</div>
+                        <div class="font-montserrat font-bold text-[28px] text-[#000]">DẤU ẤN NỔI BẬT</div>
+                        <div>
+                            <ul class="pl-4 m-0 vnp-dauan-ul">
+                                <li>VietnamPlus</li>
+                                <li>Mobile Trang Thăng Long - Hà Nội</li>
+                                <li>vietkieu.info</li>
+                                <li>congtynhatban.info</li>
+                            </ul>
+                        </div>
+                        <div class="absolute right-[35px] bottom-[24px]">
+                            <img src="./images/dauan/link.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="vnp-dauan-item relative">
+                        <div class="vnp-dauan-stt font-butler text-[105px] font-bold">02</div>
+                        <div class="font-montserrat font-bold text-[28px] text-[#000]">RAPNEWSPLUS</div>
+                        <div>
+                            <ul class="pl-4 m-0 vnp-dauan-ul">
+                                <li>Video dài 3’ phút</li>
+                                <li>Phát 2 tuần/lần</li>
+                                <li>Giải Độc giả trẻ thế giới - WAN-IFRA</li>
+                            </ul>
+                        </div>
+                        <div class="absolute right-[35px] bottom-[32px]">
+                            <img src="./images/dauan/link.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="vnp-dauan-item relative">
+                        <div class="vnp-dauan-stt font-butler text-[105px] font-bold">03</div>
+                        <div class="font-montserrat font-bold text-[28px] text-[#000]">MỘT SỐ DỰ ÁN KHÁC</div>
+                        <div>
+                            <ul class="pl-4 m-0 vnp-dauan-ul">
+                                <li>VietnamPlus</li>
+                                <li>Mobile Trang Thăng Long - Hà Nội</li>
+                                <li>vietkieu.info</li>
+                                <li>congtynhatban.info</li>
+                            </ul>
+                        </div>
+                        <div class="absolute right-[35px] bottom-[32px]">
+                            <img src="./images/dauan/link.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-wrap flex justify-center items-center ">
+            <div class="container mx-auto relative">
+                <img src="./images/bg2.png" alt="" srcset="" class="w-full">
+                <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center flex-col z-10">
+                    <div class="relative w-full h-full flex items-center justify-center flex-col">
+                        <div class="playmusic relative flex items-center justify-center">
+                            <img src="./images/playmusic.svg" alt="" srcset="" class="w-full">
+                            <svg class="absolute" xmlns="http://www.w3.org/2000/svg" width="108" height="125" viewBox="0 0 108 125" fill="none">
+                                <g filter="url(#filter0_b_223_339)">
+                                <path d="M42.2765 32.048L76.9319 55.6685C77.933 56.351 78.7626 57.3224 79.3389 58.4868C79.9151 59.6513 80.2182 60.9687 80.2182 62.3092C80.2182 63.6497 79.9151 64.9671 79.3389 66.1315C78.7626 67.296 77.933 68.2673 76.9319 68.9499L42.2765 92.5704C41.2594 93.2641 40.1011 93.6352 38.9193 93.646C37.7375 93.6567 36.5742 93.3068 35.5478 92.6318C34.5213 91.9567 33.6682 90.9806 33.0751 89.8026C32.4819 88.6245 32.17 87.2865 32.1709 85.9246V38.6938C32.17 37.3319 32.4819 35.9939 33.0751 34.8158C33.6682 33.6378 34.5213 32.6616 35.5478 31.9866C36.5742 31.3115 37.7375 30.9616 38.9193 30.9724C40.1011 30.9832 41.2594 31.3543 42.2765 32.048Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_b_223_339" x="17.2859" y="16.0872" width="77.8169" height="92.4441" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="7.4425"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_223_339"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_223_339" result="shape"/>
+                                </filter>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div id="lyricer"></div>
+                        <audio id="player" class="mt-4" controls>
+                            <source src="./images/mp3.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+                <div class="absolute bottom-0 left-0 w-full h-[200px] overlay-1 rounded-[24px]"></div>
+            </div>
+        </div>
+    
+        <div class="container-wrap flex justify-center items-center">
+            <div class="container mx-auto vnp-timeline flex items-center gap-6 pt-[100px]">
+                <div class="vnp-timeline w-[60%]">
+                    <div class="vnp-timeline-title font-butler text-[64px] ml-[10%] font-bold">Timeline</div>
+                    <div class="swiper vnp-timeline-wrap mt-24 ml-[10%]">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide vnp-timeline-main">
+                                <div class="vnp-timeline-time w-[197px] flex flex-col items-center justify-center">
+                                    <div class="month text-[#CD1414] text-[32px] font-bold font-montserrat">Tháng</div>
+                                    <div class="time text-[#CD1414] text-[32px] font-bold font-montserrat line-height-1">11/2008</div>
+                                </div>
+                                <div class="vnp-timeline-run-main flex">
+                                    <div class="vnp-timeline-run flex-1 mt-8">
+                                        <div class="w-[100%] h-[120px] relative">
+                                            <div class="vnp-timeline-run-bg w-[100%] absolute bottom-0"></div>
+                                            <svg id="vnp-timeline-check-point" xmlns="http://www.w3.org/2000/svg" width="12" height="90" viewBox="0 0 12 90" fill="none">
+                                                <path d="M6.10487 0.726727C3.15935 0.724362 0.769619 3.11026 0.767254 6.05578C0.76489 9.0013 3.15079 11.391 6.0963 11.3934C9.04182 11.3958 11.4316 9.00986 11.4339 6.06434C11.4363 3.11882 9.05039 0.729091 6.10487 0.726727ZM5.10059 6.05926L5.0332 89.9992L7.0332 90.0008L7.10059 6.06086L5.10059 6.05926Z" fill="black"/>
+                                                </svg>
+                                            <svg id="vnp-timeline-run-point" xmlns="http://www.w3.org/2000/svg" width="36" height="37" viewBox="0 0 36 37" fill="none">
+                                                <circle cx="17.8122" cy="18.8122" r="10.3903" fill="url(#paint0_linear_108_371)"/>
+                                                <circle cx="18" cy="18.9492" r="18" fill="#FF3E3E" fill-opacity="0.19"/>
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_108_371" x1="17.8122" y1="8.42187" x2="17.8122" y2="29.2026" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#FFA234"/>
+                                                        <stop offset="1" stop-color="#CD1414"/>
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vnp-timeline-content mt-16">
+                                    <div class="text-[#000] text-[20px] font-montserrat">VietnamPlus “lên sóng”, phát hành bằng 6 ngôn ngữ (Việt, Anh, Pháp, Trung, Tây Ban Nha, Nga,...)</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide vnp-timeline-main">
+                                <div class="vnp-timeline-time w-[197px] flex flex-col items-center justify-center">
+                                    <div class="month text-[#CD1414] text-[32px] font-bold font-montserrat">Tháng</div>
+                                    <div class="time text-[#CD1414] text-[32px] font-bold font-montserrat line-height-1">11/2008</div>
+                                </div>
+                                <div class="vnp-timeline-run-main flex">
+                                    <div class="vnp-timeline-run flex-1 mt-8">
+                                        <div class="w-[100%] h-[120px] relative">
+                                            <div class="vnp-timeline-run-bg w-[100%] absolute bottom-0"></div>
+                                            <svg id="vnp-timeline-check-point" xmlns="http://www.w3.org/2000/svg" width="12" height="90" viewBox="0 0 12 90" fill="none">
+                                                <path d="M6.10487 0.726727C3.15935 0.724362 0.769619 3.11026 0.767254 6.05578C0.76489 9.0013 3.15079 11.391 6.0963 11.3934C9.04182 11.3958 11.4316 9.00986 11.4339 6.06434C11.4363 3.11882 9.05039 0.729091 6.10487 0.726727ZM5.10059 6.05926L5.0332 89.9992L7.0332 90.0008L7.10059 6.06086L5.10059 6.05926Z" fill="black"/>
+                                                </svg>
+                                            <svg id="vnp-timeline-run-point" xmlns="http://www.w3.org/2000/svg" width="36" height="37" viewBox="0 0 36 37" fill="none">
+                                                <circle cx="17.8122" cy="18.8122" r="10.3903" fill="url(#paint0_linear_108_371)"/>
+                                                <circle cx="18" cy="18.9492" r="18" fill="#FF3E3E" fill-opacity="0.19"/>
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_108_371" x1="17.8122" y1="8.42187" x2="17.8122" y2="29.2026" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#FFA234"/>
+                                                        <stop offset="1" stop-color="#CD1414"/>
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vnp-timeline-content mt-16">
+                                    <div class="text-[#000] text-[20px] font-montserrat">VietnamPlus “lên sóng”, phát hành bằng 6 ngôn ngữ (Việt, Anh, Pháp, Trung, Tây Ban Nha, Nga,...)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vnp-timeline-model-wrap relative">
+                    <div class="swiper vnp-timeline-model w-[300px] h-[500px] relative">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide vnp-model vnp-model-item vnp-model-1 w-[300px] h-[500px] z-10">
+                                <!-- <model-viewer> HTML element -->
+                                <model-viewer src="./model/logo-3D.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls camera-orbit="-5.425deg 22.5deg 0.3465m" field-of-view="30deg" poster="./model/poster.webp" shadow-intensity="1">
+                                    <div class="progress-bar hide" slot="progress-bar">
+                                        <div class="update-bar"></div>
+                                    </div>
+                                    <button slot="ar-button" id="ar-button">
+                                        View in your space
+                                    </button>
+                                    <div id="ar-prompt">
+                                        <img src="./model/ar_hand_prompt.png">
+                                    </div>
+                                </model-viewer>  
+                            </div>
+                            <div class="swiper-slide vnp-model vnp-model-item vnp-model-2 w-[300px] h-[500px] z-10">
+                                <!-- <model-viewer> HTML element -->
+                                <model-viewer src="./model/logo-3D.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls camera-orbit="-5.425deg 22.5deg 0.3465m" field-of-view="30deg" poster="./model/poster.webp" shadow-intensity="1">
+                                    <div class="progress-bar hide" slot="progress-bar">
+                                        <div class="update-bar"></div>
+                                    </div>
+                                    <button slot="ar-button" id="ar-button">
+                                        View in your space
+                                    </button>
+                                    <div id="ar-prompt">
+                                        <img src="./model/ar_hand_prompt.png">
+                                    </div>
+                                </model-viewer>  
+                            </div>
+                            <div class="swiper-slide vnp-model vnp-model-item vnp-model-2 w-[300px] h-[500px] z-10">
+                                <!-- <model-viewer> HTML element -->
+                                <model-viewer src="./model/logo-3D.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls camera-orbit="-5.425deg 22.5deg 0.3465m" field-of-view="30deg" poster="./model/poster.webp" shadow-intensity="1">
+                                    <div class="progress-bar hide" slot="progress-bar">
+                                        <div class="update-bar"></div>
+                                    </div>
+                                    <button slot="ar-button" id="ar-button">
+                                        View in your space
+                                    </button>
+                                    <div id="ar-prompt">
+                                        <img src="./model/ar_hand_prompt.png">
+                                    </div>
+                                </model-viewer>  
+                            </div>
+                            <div class="swiper-slide vnp-model vnp-model-item vnp-model-2 w-[300px] h-[500px] z-10">
+                                <!-- <model-viewer> HTML element -->
+                                <model-viewer src="./model/logo-3D.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls camera-orbit="-5.425deg 22.5deg 0.3465m" field-of-view="30deg" poster="./model/poster.webp" shadow-intensity="1">
+                                    <div class="progress-bar hide" slot="progress-bar">
+                                        <div class="update-bar"></div>
+                                    </div>
+                                    <button slot="ar-button" id="ar-button">
+                                        View in your space
+                                    </button>
+                                    <div id="ar-prompt">
+                                        <img src="./model/ar_hand_prompt.png">
+                                    </div>
+                                </model-viewer>  
+                            </div>
+                            <div class="swiper-slide vnp-model vnp-model-item vnp-model-2 w-[300px] h-[500px] z-10">
+                                <!-- <model-viewer> HTML element -->
+                                <model-viewer src="./model/logo-3D.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls camera-orbit="-5.425deg 22.5deg 0.3465m" field-of-view="30deg" poster="./model/poster.webp" shadow-intensity="1">
+                                    <div class="progress-bar hide" slot="progress-bar">
+                                        <div class="update-bar"></div>
+                                    </div>
+                                    <button slot="ar-button" id="ar-button">
+                                        View in your space
+                                    </button>
+                                    <div id="ar-prompt">
+                                        <img src="./model/ar_hand_prompt.png">
+                                    </div>
+                                </model-viewer>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <img src="./images/dauan/link.svg" alt="" srcset="">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="./images/dauan/link.svg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-wrap flex justify-center items-center">
+            <div class="container mx-auto vnp-start flex justify-center items-center gap-6 pt-[132px] pb-[132px]">
+                <div class="vnp-dauan-list flex justify-center items-center gap-4 flex-1">
+                    <div class="vnp-award-item box-shadow-1 relative">
+                        <div class="vnp-dauan-stt font-butler text-[94px] font-bold mb-4">01</div>
+                        <div class="font-montserrat font-bold text-[22px] text-[#000] text-center">KHEN TẶNG CỦA ĐẢNG,</div>
+                        <div class="font-montserrat font-bold text-[22px] text-[#000] text-center">NHÀ NƯỚC</div>
+                        <div class="mt-4">
+                            <ul class="pl-4 m-0 vnp-award-ul">
+                                <li>Huân chương Lao động hạng Ba năm 2013</li>
+                                <li>Ba lần nhận Cờ Thi đua Chính phủ (năm 2010, 2012, 2016)</li>
+                                <li>Bằng khen của Thủ tướng Chính phủ (năm 2012)</li>
+                                <li>Huân chương Lao động Hạng Nhì năm 2018</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="vnp-award-item box-shadow-1 relative">
+                        <div class="vnp-dauan-stt font-butler text-[94px] font-bold mb-4">02</div>
+                        <div class="font-montserrat font-bold text-[22px] text-[#000] text-center">GIẢI THƯỞNG </div>
+                        <div class="font-montserrat font-bold text-[22px] text-[#000] text-center">TRONG NƯỚC</div>
+                        <div class="mt-4">
+                            <ul class="pl-4 m-0 vnp-award-ul">
+                                <li>Video dài 3’ phút</li>
+                                <li>Phát 2 tuần/lần</li>
+                                <li>Giải Độc giả trẻ thế giới - WAN-IFRA</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="vnp-award-item box-shadow-1 relative">
+                        <div class="vnp-dauan-stt font-butler text-[94px] font-bold mb-4">03</div>
+                        <div class="font-montserrat font-bold text-[22px] text-[#000] text-center">GIẢI THƯỞNG</div>
+                        <div class="font-montserrat font-bold text-[22px] text-[#000] text-center">QUỐC TẾ</div>
+                        <div class="mt-4">
+                            <ul class="pl-4 m-0 vnp-award-ul">
+                                <li>2014: Giải thưởng Độc giả Trẻ Thế giới; Giải nhất hạng Digital First của WAN-IFRA</li>
+                                <li>2015: Được WAN-IFRA bầu chọn là một trong năm tòa soạn nhỏ nhưng sáng tạo nhất thế giới</li>
+                                <li>2019: Sản phẩm Chatbot của VietnamPlus đã đạt “Giải thưởng xuất sắc chất lượng thông tấn” của OANA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <!-- gsap -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script> -->
+    <!-- end gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/lyricer.min.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./js/three.module.js",
+                "three/addons/": "./js/jsm/"
+            }
+        }
+    </script>
+    <script src="./js/script.js" async defer></script>
+    <script src="./model/script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+
+    <script type="text/javascript">
+        var text = "[ti:Love Me Harder]\n[total:236220]\n[offset:0]\n[00:00.61]Ariana Grande、The Weeknd - Love Me Harder\n[00:03.21]Tell me something I need to know\n[00:07.72]Then take my breath and never let it go\n[00:12.76]If you just let me invade your space\n[00:17.48]I'll take the pleasure, take it with the pain\n[00:22.92]And defend the moment I bit my lip\n[00:27.78]Baby in that moment you'll know this is\n[00:32.67]Something bigger than us \n[00:34.22]And be a bliss\n[00:37.45]Give me a reason to believe it\n[00:41.05]'Cause if you want to keep me \n[00:44.12]You gotta, gotta, gotta, gotta, got to love me harder\n[00:50.74]And if you really need me\n[00:53.84]You gotta, gotta, gotta, gotta, got to love me harder\n[00:58.60]Baby, love me harder\n[01:03.85]Love me, love me, love me\n[01:08.70]Harder harder harder\n[01:10.85]I know your motives and you know mine\n[01:15.53]The ones that love me I tend to leave behind\n[01:20.63]If you know about me and choose to stay\n[01:25.13]Then take this pleasure and take it with the pain\n[01:30.77]And defend the moment you bite your lip\n[01:35.31]When I get you moanin you know it's real\n[01:40.47]Can you feel the preasure between your hips\n[01:45.42]I'll make it feel like the first time\n[01:48.94]Cause if you want to keep me \n[01:51.99]You gotta, gotta, gotta, gotta, got to love me harder\n[01:56.82](I'mma love you harder)\n[01:58.74]And if you really need me \n[02:01.80]You gotta, gotta, gotta, gotta, got to love me harder\n[02:06.55](Love love me harder)\n[02:11.59]Love me, love me, love me\n[02:16.53]Harder harder harder\n[02:21.45]Love me, love me, love me\n[02:26.23]Harder harder harder\n[02:30.19]So what will I do if I can't figure it out\n[02:34.28](figure it out)\n[02:35.23]You have to try try try again\n[02:39.91]So what will I do if I can't figure it out\n[02:44.54]I'm gonna leave leave leave 'cause\n[02:47.22]'Cause if you want to keep me \n[02:50.28]You gotta, gotta, gotta, gotta, got to love me harder\n[02:55.05](I'mma love you love you love you)\n[02:56.76]And if you really need me \n[02:59.92]You gotta, gotta, gotta, gotta, got to love me harder\n[03:04.47](Love me love me baby)\n[03:06.42]'Cause if you want to keep me \n[03:09.62]You gotta, gotta, gotta, gotta, got to love me harder\n[03:14.42](Hold me harder)\n[03:16.44]And if you really need me \n[03:19.31]You gotta, gotta, gotta, gotta, got to love me harder\n[03:24.18](I'mma love you harder)\n[03:29.36]Love me, love me, love me, love me\n[03:34.18]Harder, harder, harder\n[03:35.95]Oh, you got to love me, love me, baby\n[03:38.80]Love me, love me, love me\n[03:40.54]Just a little bit harder, harder, baby\n[03:43.86]Harder, harder, harder\n";
+        var audio = document.getElementById("player");
+        var lrc = new Lyricer({"showLines": 5, "clickable": false});
+        lrc.setLrc(text);
+      
+        audio.addEventListener("timeupdate", function() {
+              lrc.move(audio.currentTime);
+        });
+      
+        window.addEventListener('lyricerclick', function(e){
+          if (e.detail.time > 0) {
+              audio.currentTime = e.detail.time;
+          }
+        });
+    </script>
+</body>
+
+</html>
