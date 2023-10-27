@@ -43,20 +43,32 @@ $(window).on('load', function () {
 });
 
 
+var swiper11 = new Swiper(".vnp-giaithuong-slide", {
 
-var swiper = new Swiper(".vnp-timeline-model", {
-    effect: "cards",
-    grabCursor: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    freeMode: false,
+    loop: true,
+    mousewheel: false,
+    keyboard: {
+        enabled: true
     },
-});
-var swiper1 = new Swiper(".vnp-timeline-wrap", {});
 
-swiper.on('slideNextTransitionEnd', function (event) {
-    swiper1.slideNext()
-});
-swiper.on('slidePrevTransitionEnd', function (event) {
-    swiper1.slidePrev()
+    // Enabled autoplay mode
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+    },
+    breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 30
+        }
+    }
+ 
 });
