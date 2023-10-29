@@ -26,12 +26,12 @@ function start() {
 $(window).on('load', function () {
     let max = 0;
     let loading = setInterval(function () {
-        if (max >= 5) {
+        if (max >= 3) {
             $('#loading-text').hide();
             $('#loading-click').show();
             clearInterval(loading);
         } else {
-            if (max !== 5) {
+            if (max !== 3) {
                 $('.wave').removeClass(`v${max}`);
                 max = max + 1;
                 $('.wave').addClass(`v${max}`);

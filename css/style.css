@@ -33,12 +33,12 @@
   background: white;
 }
 .loading .plus {
-  width: 200px;
-  height: 173px;
+  width: 150px;
+  height: 123px;
   overflow: hidden;
 }
 .loading-img {
-  width: 200px;
+  width: 150px;
 }
 
 .circle {
@@ -76,12 +76,12 @@
 }
 .wave.v2::before,
 .wave.v2::after {
-  top: -50px;
+  top: -75px;
 }
 
 .wave.v3::before,
 .wave.v3::after {
-  top: -75px;
+  top: -135px;
 }
 .wave.v4::before,
 .wave.v4::after {
@@ -126,6 +126,13 @@
 .vnp-video {
     width: calc(100vw - 32px);
     height: calc(100vh - 32px);
+    overflow: hidden;
+    border-radius: 16px;
+}
+.vnp-video-2 {
+    width: calc(100vw - 32px);
+    /* height: calc(100vh - 32px); */
+    height: auto;
     overflow: hidden;
     border-radius: 16px;
 }
@@ -184,6 +191,28 @@
   gap: 18px;
   background: white;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.dauan-image-2 {
+  transform: rotate(0deg);
+}
+
+.dauan-image-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(7.5deg)!important;
+  z-index: 10;
+}
+.back-link-dauan {
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+.back-link-dauan:hover {
+  cursor: pointer;
+  /* zoom: 1.15; */
+  box-shadow: rgba(0,0,0,0.8) 0 0 10px;
 }
 
 .vnp-dauan-stt {
@@ -627,4 +656,96 @@ input[type="range"]:active::-ms-thumb {
 
 #giaithuong-content span {
     font-weight: 500;
+}
+
+.dot {
+	position: fixed;
+	width: 7em;
+	height: 7rem;
+	fill: #474787;
+	top: -4em;
+	left: -4em;
+	opacity: 0;
+	transform: scale(0);
+	transform-origin: 50% 50%;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1;
+  mix-blend-mode: difference;
+
+	.text1 {
+		font: normal 4px sans-serif;
+		/* text-transform: uppercase; */
+		fill: #eee;
+		opacity: 0;
+	}
+  .text2 {
+		font: normal 4px sans-serif;
+		/* text-transform: uppercase; */
+		fill: #eee;
+		opacity: 0;
+	}
+}
+
+
+/* .custom-cursor {
+  position: fixed;
+  opacity: 0;
+  mix-blend-mode: difference;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 350ms ease;
+  transform: translate(-50%, -50%) scale(.5);
+  z-index: 1000;
+}
+.custom-cursor--link {
+  transform: translate(-50%, -50%) scale(1);
+} */
+
+.music-play {
+  animation: rotation 15s infinite linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+footer {
+  height: 412px;
+  background: linear-gradient(148deg, #E15E15 -19.27%, #C71F33 80.76%);
+  width: 100vw;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .vnp-dauan-item {
+      min-width: 100%;
+  }
+
+  .dauan-image {
+    width: 90%!important;
+  }
+
+  #lyricer ul li {
+    font-size: 13px;
+  }
+
+  ul.vnp-award-ul li {
+    font-size: 12px;
+  }
+
+  .vnp-award-item {
+    min-height: unset!important;
+  }
+
+  .vnp-content {
+    height: 95px;
+  }
 }

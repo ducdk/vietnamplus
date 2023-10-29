@@ -141,7 +141,67 @@ volumeSlider.addEventListener('input', (e) => {
 });
 
 function renderLyric() {
-    let text = "[ti:Love Me Harder]\n[total:236220]\n[offset:0]\n[00:00.61]Ariana Grande、The Weeknd - Love Me Harder\n[00:03.21]Tell me something I need to know\n[00:07.72]Then take my breath and never let it go\n[00:12.76]If you just let me invade your space\n[00:17.48]I'll take the pleasure, take it with the pain\n[00:22.92]And defend the moment I bit my lip\n[00:27.78]Baby in that moment you'll know this is\n[00:32.67]Something bigger than us \n[00:34.22]And be a bliss\n[00:37.45]Give me a reason to believe it\n[00:41.05]'Cause if you want to keep me \n[00:44.12]You gotta, gotta, gotta, gotta, got to love me harder\n[00:50.74]And if you really need me\n[00:53.84]You gotta, gotta, gotta, gotta, got to love me harder\n[00:58.60]Baby, love me harder\n[01:03.85]Love me, love me, love me\n[01:08.70]Harder harder harder\n[01:10.85]I know your motives and you know mine\n[01:15.53]The ones that love me I tend to leave behind\n[01:20.63]If you know about me and choose to stay\n[01:25.13]Then take this pleasure and take it with the pain\n[01:30.77]And defend the moment you bite your lip\n[01:35.31]When I get you moanin you know it's real\n[01:40.47]Can you feel the preasure between your hips\n[01:45.42]I'll make it feel like the first time\n[01:48.94]Cause if you want to keep me \n[01:51.99]You gotta, gotta, gotta, gotta, got to love me harder\n[01:56.82](I'mma love you harder)\n[01:58.74]And if you really need me \n[02:01.80]You gotta, gotta, gotta, gotta, got to love me harder\n[02:06.55](Love love me harder)\n[02:11.59]Love me, love me, love me\n[02:16.53]Harder harder harder\n[02:21.45]Love me, love me, love me\n[02:26.23]Harder harder harder\n[02:30.19]So what will I do if I can't figure it out\n[02:34.28](figure it out)\n[02:35.23]You have to try try try again\n[02:39.91]So what will I do if I can't figure it out\n[02:44.54]I'm gonna leave leave leave 'cause\n[02:47.22]'Cause if you want to keep me \n[02:50.28]You gotta, gotta, gotta, gotta, got to love me harder\n[02:55.05](I'mma love you love you love you)\n[02:56.76]And if you really need me \n[02:59.92]You gotta, gotta, gotta, gotta, got to love me harder\n[03:04.47](Love me love me baby)\n[03:06.42]'Cause if you want to keep me \n[03:09.62]You gotta, gotta, gotta, gotta, got to love me harder\n[03:14.42](Hold me harder)\n[03:16.44]And if you really need me \n[03:19.31]You gotta, gotta, gotta, gotta, got to love me harder\n[03:24.18](I'mma love you harder)\n[03:29.36]Love me, love me, love me, love me\n[03:34.18]Harder, harder, harder\n[03:35.95]Oh, you got to love me, love me, baby\n[03:38.80]Love me, love me, love me\n[03:40.54]Just a little bit harder, harder, baby\n[03:43.86]Harder, harder, harder\n";
+    let text = `
+    [ti:VietnamPlus Ca]\n
+    [total:236220]\n
+    [offset:0]\n
+    [00:00.61]VietnamPlus Ca\n
+    [00:21.21]2008, chục con người trong một tòa soạn nhỏ\n
+    [00:23.21]Giữa thời buổi báo chí cạnh tranh cũng ngày một khó\n
+    [00:26.21]Những trục trặc đến tới tấp kể từ ngày bấm nút\n
+    [00:28.21]Làm tin không ai đọc, ai ai cũng hẫng hụt\n
+    [00:32.21]Có những khi đi làm tin bị nhầm với báo khác\n
+    [00:34.21]Tòa soạn chật đến nỗi phải đứng ngoài hành lang\n
+    [00:36.21]Hồi ấy phòng lãnh đạo 8 mét vuông siêu nhỏ\n
+    [00:38.21]Nào các em ngồi xuống có mấy ý tưởng điên rồ\n
+    [00:42.21]VietnamPlus\n
+    [00:45.21]Là nơi những cánh tay bắt đầu\n
+    [00:51.21]Vươn xa\n
+    [00:53.21]VietnamPlus\n
+    [00:56.21]Để ta thấy thanh xuân đáng giá\n
+    [01:00.21]Hơn bao giờ\n
+    [01:02.21]2010, VietnamPlus mobile ra đời\n
+    [01:04.21]Là khẳng định đẳng cấp không cần phải nhiều lời\n
+    [01:07.21]Dân chơi nào 12 tháng tận 9 lần họp báo\n
+    [01:09.21]Sản phẩm mới ra liên tiếp toàn là chất lượng cao\n
+    [01:12.21]2011, nhiều dấu ấn thách thức ngày một lớn\n
+    [01:14.21]Có người đi, có người ở quyết tâm càng cao hơn\n
+    [01:17.21]Anh chị em có nhớ năm 2013\n
+    [01:19.21]Rapnews Plus được ra đời, tạo ra bước đột phá\n
+    [01:23.21]Chúng ta đã càn quét bao nhiêu trang web, bao giải thưởng\n
+    [01:26.21]Người ngoài mà có khen cũng phẩy tay chuyện thường\n
+    [01:29.21]Tòa soạn nhỏ ngày nào, chật chội của chúng ta\n
+    [01:31.21]Giờ là top sáng tạo, bầu bởi WANIFRA\n
+    [01:33.21]Như thế đã đủ chưa anh ơi\n
+    [01:35.21]Như thế đã đủ chưa chị ơi\n
+    [01:37.21]Chừng đó đã đủ chưa chị ơi\n
+    [01:39.21]Chưa đủ đâu, tiếp đi anh em ơi\n
+    [01:41.21]VietnamPlus\n
+    [01:43.21]Là nơi khác chi đâu mái nhà\n
+    [01:45.21]Yêu thương\n
+    [01:47.21]VietnamPlus\n
+    [01:49.21]Để ta thấy yêu những mơ ước\n
+    [01:51.21]Như chưa từng\n
+    [01:53.21]Triết lý thành công ở đời này công nhận cấm có sai\n
+    [01:55.21]Ở con người, ở tập thể không phải của riêng một ai\n
+    [01:58.21]Ta có thể không là những ngôi sao trong làng báo\n
+    [02:01.21]Nhưng mỗi người, mỗi con tim đầy nhiệt huyết sáng tạo\n
+    [02:03.21]2,3 giờ sáng vẫn lên Facebook í ới nhau\n
+    [02:06.21]Có tin nóng xách xe lên đi trong đêm cho máu\n
+    [02:09.21]Những đêm trắng biên tập tin sáng hôm sau\n
+    [02:02.21]Kệ chồng cứ càu nhàu, vợ làu bàu đằng sau\n
+    [02:05.21]Nếu làm việc căng một, thì chơi phải căng 10\n
+    [02:08.21]Từ trước cho đến nay chưa từng quên tiếng cười\n
+    [02:11.21]Hôm nay lãnh đạo lại gọi anh em ta vào\n
+    [02:14.21]Xong hết việc chưa anh em làm vài cốc bia nào\n
+    [02:17.21]VietnamPlus\n
+    [02:20.21]Là nơi để đam mê bắt đầu\n
+    [02:23.21]Quanh ta\n
+    [02:26.21]VietnamPlus\n
+    [02:29.21]Hành trình ta chưa từng kết thúc\n
+    [02:31.21]Chưa bao giờ\n
+
+    `;
     let audio = document.getElementById("player");
     let lrc = new Lyricer({"showLines": 5, "clickable": false});
     lrc.setLrc(text);
