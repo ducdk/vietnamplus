@@ -199,13 +199,13 @@ function renderTimeline() {
     data.forEach(element => {
         stringText = `
             <div class="swiper-slide vnp-timeline-main">
-                <div class="vnp-timeline-time w-[197px] flex flex-col items-center justify-center">
-                    <div class="month text-[#CD1414] text-[32px] w-[197px] text-center font-bold font-montserrat">Tháng</div>
-                    <div class="time text-[#CD1414] text-[32px] w-[197px] text-center m-0 font-bold font-montserrat line-height-1">${element.time}</div>
+                <div class="vnp-timeline-time w-[125px] md:w-[197px] flex flex-col items-center justify-center">
+                    <div class="month text-[#CD1414] text-[16px] md:text-[32px] w-[125px] md:w-[197px] text-center font-bold font-montserrat">Tháng</div>
+                    <div class="time text-[#CD1414] text-[16px] md:text-[32px] w-[125px] md:w-[197px] text-center m-0 font-bold font-montserrat line-height-1">${element.time}</div>
                 </div>
                 <div class="vnp-timeline-run-main flex">
-                    <div class="vnp-timeline-run flex-1 mt-8">
-                        <div class="w-[100%] h-[120px] relative">
+                    <div class="vnp-timeline-run flex-1 mt-3 md:mt-8">
+                        <div class="w-[100%] h-[70px] md:h-[120px] relative">
                             <div class="vnp-timeline-run-bg w-[100%] absolute bottom-0"></div>
                             <svg id="vnp-timeline-check-point" xmlns="http://www.w3.org/2000/svg" width="12" height="90" viewBox="0 0 12 90" fill="none">
                                 <path d="M6.10487 0.726727C3.15935 0.724362 0.769619 3.11026 0.767254 6.05578C0.76489 9.0013 3.15079 11.391 6.0963 11.3934C9.04182 11.3958 11.4316 9.00986 11.4339 6.06434C11.4363 3.11882 9.05039 0.729091 6.10487 0.726727ZM5.10059 6.05926L5.0332 89.9992L7.0332 90.0008L7.10059 6.06086L5.10059 6.05926Z" fill="black"/>
@@ -223,8 +223,8 @@ function renderTimeline() {
                         </div>
                     </div>
                 </div>
-                <div class="vnp-timeline-content mt-16">
-                    <div class="text-[#000] text-[20px] font-montserrat">${element.content}</div>
+                <div class="vnp-timeline-content mt-8 md:mt-16">
+                    <div class="text-[#000] text-[12px] md:text-[20px] text-center md:text-left font-montserrat">${element.content}</div>
                 </div>
             </div>
         `;

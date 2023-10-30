@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/fonts/stylesheet.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./model/styles.css">
@@ -20,7 +20,7 @@
 
 <body class="main">
 
-    <div id="loading" class="fixed flex flex-col h-[100vh] items-center justify-center loading w-[100vw]">
+    <!-- <div id="loading" class="fixed flex flex-col h-[100vh] items-center justify-center loading w-[100vw]">
         <div class="plus relative mt-[-40px]">
             <div class="loading-img">
                 <img src="./images/loading.png" alt="" srcset="">
@@ -32,13 +32,13 @@
         <div id="loading-text" class="font-[20px] text-[#CD1414] text-center">Nguồn sáng tạo vươn xa...</div>
         <div id="loading-click" class="font-[20px] text-[#CD1414] text-center hidden cursor-pointer" onclick="start()">
             Nhấn để bắt đầu</div>
-    </div>
+    </div> -->
 
 
     <div class="container-wrap flex justify-center items-center">
-        <div class="vnp-video relative">
+        <div class="vnp-video relative mt-[16px]">
             <video id="vnp-video-modau">
-                <source src="https://rr4---sn-un57ene6.c.drive.google.com/videoplayback?expire=1698623039&ei=D8Q-ZbKrDcHSp84PoOGC8Ag&ip=2a09:bac1:7ac0:50::247:67&cp=QVROWkdfUlBRSlhPOmdhRVpyQTRpVDlOWGpOd0F0SU1URGs4RWJ5Z1RYMzJ4dUlwY0FnWjBZcU8&id=03bab6df51de2e06&itag=18&source=webdrive&requiressl=yes&xpc=EghotM6WJ3oBAQ==&mh=7j&mm=32&mn=sn-un57ene6&ms=su&mv=m&mvi=4&pl=64&ttl=transient&susc=dr&driveid=1jc6K4bqzntRCfQ8pEl8N6R-M-rw1-2DB&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=265.891&lmt=1698073696734148&mt=1698611823&subapp=DRIVE_WEB_FILE_VIEWER&txp=0006224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,xpc,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AGM4YrMwRQIgNo9nOAFSvJXEYAePffGQK8pF9iYkAe5Ocf2Y1y2KwaMCIQCCTjKA3CI3H2sTiyQINuwLxGD1Un0s2n1OLW9RpEWQpw==&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AK1ks_kwRQIgNUgOOt7ZGnD5Y3u4L_Fauyb8TOyg83U-lPlrS_lrPsMCIQDcxAAeP1mnfR53cSkzwzvbU6pnjwGKMplqSMQ5a1D_IQ==&cpn=FzDthysX7STsjsYW&c=WEB_EMBEDDED_PLAYER&cver=1.20231024.01.02" type="video/mp4">
+                <source src="https://gf-cdn.stpsoftware.co/video.MP4" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
             <div class="vnp-play absolute top-0 left-0 w-[100%] h-[100%] flex items-center justify-center" onclick="start()">
@@ -53,18 +53,22 @@
 
 
     <div class="bg-1">
-        <div id="intro" class="container-wrap flex justify-center items-center">
-            <div class="container mx-auto vnp-start flex flex-col justify-center items-center gap-6">
+        <div id="intro" class="container-wrap flex justify-center items-center mt-[275px] md:mt-[160px]">
+            <div class="container mx-auto vnp-start flex flex-col justify-center items-center">
                 <div class="vnp-logo" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <img src="./images/logo.png" alt="" srcset="">
                 </div>
-                <div data-aos="fade-up" class="vnp-title font-butler text-[32px] md:text-[64px] font-bold text-center">
+                <div data-aos="fade-up" class="vnp-title mt-[54px] leading-n font-butler text-[32px] md:text-[64px] font-bold text-center">
                     HÀNH TRÌNH 15 NĂM VIETNAMPLUS
                 </div>
-                <div id="intro-content" data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="vnp-content-2 capitalize font-montserrat font-semibold px-4 md:px-0 text-[20px] md:text-[30px] text-[#696969]">
+                <div 
+                    id="intro-content" 
+                    data-aos="fade-up" 
+                    data-aos-anchor-placement="top-bottom" 
+                    class="vnp-content-2 mt-[30px] md:mt-[24px] leading-n capitalize font-montserrat font-medium px-4 md:px-0 text-[20px] md:text-[30px] text-[#696969]">
                 </div>
     
-                <div class="vnp-social flex gap-4 mt-40">
+                <div class="vnp-social flex gap-4 mt-[55px] md:mt-[80px]">
                     <a href="https://www.facebook.com/VietnamPlus" target="_blank" class="back-link-dauan" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
                         <img src="./images/sfb.svg" alt="" srcset="">
                     </a>
@@ -79,53 +83,53 @@
         </div>
     
         <div id="dauan" class="container-wrap flex justify-center items-center">
-            <div class="container mx-auto vnp-start flex flex-col md:flex-row justify-center items-center gap-6 pt-[132px] pb-[132px]">
+            <div class="container mx-auto vnp-start flex flex-col md:flex-row justify-center items-center gap-6 pt-[175px]">
                 <div class="flex flex-1 flex-col justify-end vnp-dauan relative">
                     <img src="./images/dauan/anh2.png" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" alt="" srcset="" class="w-full dauan-image dauan-image-2">
                     <img src="./images/dauan/anh1.png" data-aos="fade-up" data-aos-delay="2000" data-aos-anchor-placement="top-bottom" alt="" srcset="" class="w-full dauan-image dauan-image-1">
                 </div>
-                <div class="vnp-dauan-list flex w-full flex-col gap-4 flex-1">
+                <div class="vnp-dauan-list flex w-full flex-col gap-4 flex-1 mt-[30px]">
                     <div class="vnp-dauan-item relative" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
-                        <div class="vnp-dauan-stt font-butler text-[105px] font-bold">01</div>
-                        <div class="font-montserrat font-bold text-[28px] text-[#000]">DẤU ẤN NỔI BẬT</div>
-                        <div>
-                            <ul class="pl-4 m-0 vnp-dauan-ul">
+                        <div class="vnp-dauan-stt font-butler text-[70px] md:text-[105px] font-bold">01</div>
+                        <div class="font-montserrat font-bold text-[18px] md:text-[28px] text-[#000]">DẤU ẤN NỔI BẬT</div>
+                        <div class="">
+                            <ul class="pl-4 m-0 vnp-dauan-ul text-[14px] md:text-[22px]">
                                 <li>VietnamPlus</li>
                                 <li>Mobile Trang Thăng Long - Hà Nội</li>
                                 <li>vietkieu.info</li>
                                 <li>congtynhatban.info</li>
                             </ul>
                         </div>
-                        <div class="absolute right-[35px] bottom-[24px] back-link-dauan">
+                        <div class="absolute right-[14px] md:right-[35px] bottom-[24px] back-link-dauan">
                             <img src="./images/dauan/link.svg" alt="" srcset="">
                         </div>
                     </div>
                     <div class="vnp-dauan-item relative" data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-bottom">
-                        <div class="vnp-dauan-stt font-butler text-[105px] font-bold">02</div>
-                        <div class="font-montserrat font-bold text-[28px] text-[#000]">RAPNEWSPLUS</div>
-                        <div>
-                            <ul class="pl-4 m-0 vnp-dauan-ul">
+                        <div class="vnp-dauan-stt font-butler text-[70px] md:text-[105px] font-bold">02</div>
+                        <div class="font-montserrat font-bold text-[18px] md:text-[28px] text-[#000]">RAPNEWSPLUS</div>
+                        <div class="">
+                            <ul class="pl-4 m-0 vnp-dauan-ul text-[14px] md:text-[22px]">
                                 <li>Video dài 3’ phút</li>
                                 <li>Phát 2 tuần/lần</li>
                                 <li>Giải Độc giả trẻ thế giới - WAN-IFRA</li>
                             </ul>
                         </div>
-                        <div class="absolute right-[35px] bottom-[24px] back-link-dauan">
+                        <div class="absolute right-[14px] md:right-[35px] bottom-[24px] back-link-dauan">
                             <img src="./images/dauan/link.svg" alt="" srcset="">
                         </div>
                     </div>
                     <div class="vnp-dauan-item relative" data-aos="fade-up" data-aos-delay="700" data-aos-anchor-placement="top-bottom">
-                        <div class="vnp-dauan-stt font-butler text-[105px] font-bold">03</div>
-                        <div class="font-montserrat font-bold text-[28px] text-[#000]">MỘT SỐ DỰ ÁN KHÁC</div>
-                        <div>
-                            <ul class="pl-4 m-0 vnp-dauan-ul">
+                        <div class="vnp-dauan-stt font-butler text-[70px] md:text-[105px] font-bold">03</div>
+                        <div class="font-montserrat font-bold text-[18px] md:text-[28px] text-[#000]">MỘT SỐ DỰ ÁN KHÁC</div>
+                        <div class="">
+                            <ul class="pl-4 m-0 vnp-dauan-ul text-[14px] md:text-[22px]">
                                 <li>VietnamPlus</li>
                                 <li>Mobile Trang Thăng Long - Hà Nội</li>
                                 <li>vietkieu.info</li>
                                 <li>congtynhatban.info</li>
                             </ul>
                         </div>
-                        <div class="absolute right-[35px] bottom-[24px] back-link-dauan">
+                        <div class="absolute right-[14px] md:right-[35px] bottom-[24px] back-link-dauan">
                             <img src="./images/dauan/link.svg" alt="" srcset="">
                         </div>
                     </div>
@@ -133,7 +137,7 @@
             </div>
         </div>
 
-        <div class="container-wrap flex justify-center items-center ">
+        <div class="container-wrap flex justify-center items-center mt-[72px] md:mt-[200px]">
             <div class="vnp-video-2 relative">
                 <img src="./images/bg2.png" alt="" srcset="" class="w-full hidden md:block">
                 <img src="./images/bg-mobile.png" alt="" srcset="" class="w-full block md:hidden">
@@ -141,7 +145,7 @@
                     <div class="relative w-full h-full flex items-center justify-center flex-col">
                         <div class="playmusic relative flex items-center justify-center">
                             <img src="./images/playmusic.svg" alt="" srcset="" class="w-full music-play">
-                            <svg class="absolute" xmlns="http://www.w3.org/2000/svg" width="108" height="125" viewBox="0 0 108 125" fill="none">
+                            <svg id="iconplay" class="absolute" xmlns="http://www.w3.org/2000/svg" width="108" height="125" viewBox="0 0 108 125" fill="none">
                                 <g filter="url(#filter0_b_223_339)">
                                 <path d="M42.2765 32.048L76.9319 55.6685C77.933 56.351 78.7626 57.3224 79.3389 58.4868C79.9151 59.6513 80.2182 60.9687 80.2182 62.3092C80.2182 63.6497 79.9151 64.9671 79.3389 66.1315C78.7626 67.296 77.933 68.2673 76.9319 68.9499L42.2765 92.5704C41.2594 93.2641 40.1011 93.6352 38.9193 93.646C37.7375 93.6567 36.5742 93.3068 35.5478 92.6318C34.5213 91.9567 33.6682 90.9806 33.0751 89.8026C32.4819 88.6245 32.17 87.2865 32.1709 85.9246V38.6938C32.17 37.3319 32.4819 35.9939 33.0751 34.8158C33.6682 33.6378 34.5213 32.6616 35.5478 31.9866C36.5742 31.3115 37.7375 30.9616 38.9193 30.9724C40.1011 30.9832 41.2594 31.3543 42.2765 32.048Z" fill="white"/>
                                 </g>
@@ -177,16 +181,17 @@
         </div>
     
         <div class="container-wrap flex justify-center items-center" >
-            <div class="container mx-auto vnp-timeline flex flex-col md:flex-row items-center gap-6 pt-[100px]">
+            <div class="container mx-auto vnp-timeline flex flex-col-reverse md:flex-row items-center gap-6 pt-[100px]">
                 <div class="vnp-timeline w-full md:w-[60%] mx-8 md:mx-0">
-                    <div class="vnp-timeline-title font-butler text-[64px] ml-8 md:ml-[10%] font-bold">Timeline</div>
+                    <div class="vnp-timeline-title font-butler hidden md:flex text-[40px] md:text-[64px] ml-8 md:ml-[10%] font-bold">Timeline</div>
                     <div class="swiper vnp-timeline-wrap mt-24 ml-8 md:ml-[10%] mx-8 md:mx-0">
                         <div id="timeline-text" class="swiper-wrapper">
                         </div>
                     </div>
                 </div>
                 <div class="vnp-timeline-model-wrap relative section__link">
-                    <div class="swiper vnp-timeline-model w-[300px] h-[500px] relative">
+                    <div class="vnp-timeline-title font-butler flex md:hidden justify-center text-[40px] md:text-[64px] text-center font-bold">Timeline</div>
+                    <div class="swiper vnp-timeline-model w-[300px] h-[500px] relative mt-[40px] md:mt-[0px]">
                         <div id="timeline-model" class="swiper-wrapper">
                         </div>
                     </div>
@@ -201,12 +206,12 @@
         </div>
 
         <div class="container-wrap flex justify-center items-center">
-            <div class="container mx-auto vnp-start flex justify-center items-center gap-6 pt-[132px] pb-[132px]">
+            <div class="container mx-auto vnp-start flex justify-center items-center gap-6 pt-[175px]">
                 <div class="vnp-dauan-list flex flex-col md:flex-row justify-center items-center gap-4 flex-1">
                     <div class="vnp-award-item box-shadow-1 relative">
                         <div class="vnp-dauan-stt font-butler text-[70px] md:text-[94px] font-bold mb-4">01</div>
-                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000] text-center">KHEN TẶNG CỦA ĐẢNG,</div>
-                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000] text-center">NHÀ NƯỚC</div>
+                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">KHEN TẶNG CỦA ĐẢNG,</div>
+                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">NHÀ NƯỚC</div>
                         <div class="mt-4">
                             <ul class="pl-4 m-0 vnp-award-ul text-[12px] md:text-[18px]">
                                 <li>13/11/2013: Huân chương Lao động hạng Ba</li>
@@ -219,8 +224,8 @@
                     </div>
                     <div class="vnp-award-item box-shadow-1 relative">
                         <div class="vnp-dauan-stt font-butler text-[70px] md:text-[94px] font-bold mb-4">02</div>
-                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000] text-center">GIẢI THƯỞNG </div>
-                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000] text-center">TRONG NƯỚC</div>
+                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">GIẢI THƯỞNG </div>
+                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">TRONG NƯỚC</div>
                         <div class="mt-4">
                             <ul class="pl-4 m-0 vnp-award-ul text-[12px] md:text-[18px]">
                                 <li>2012-2023, 11 lần liên tiếp dành Giải Báo chí Quốc Gia với 20 giải, trong đó có: 6 Giải A, 8 Giải B, 5 Giải C, 1 Giải Khuyến Khích</li>
@@ -231,8 +236,8 @@
                     </div>
                     <div class="vnp-award-item box-shadow-1 relative">
                         <div class="vnp-dauan-stt font-butler text-[70px] md:text-[94px] font-bold mb-4">03</div>
-                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000] text-center">GIẢI THƯỞNG</div>
-                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000] text-center">QUỐC TẾ</div>
+                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">GIẢI THƯỞNG</div>
+                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">QUỐC TẾ</div>
                         <div class="mt-4">
                             <ul class="pl-4 m-0 vnp-award-ul text-[12px] md:text-[18px]" >
                                 <li>11/2014: Giải Nhất ở hạng mục Digital First cho loạt RapNewsPlus của WAN-IFRA</li>
@@ -246,7 +251,7 @@
         </div>
 
         <div id="giaithuong" class="container-wrap flex flex-col justify-center items-center">
-            <div class="container mx-auto vnp-start flex justify-center items-center gap-6 pt-[132px] pb-[132px]">
+            <div class="container mx-auto vnp-start flex justify-center items-center gap-6 pt-[175px] pb-[132px]">
                 <div id="giaithuong-content" class="vnp-dauan-list flex flex-1 text-[14px] md:text-[30px] text-[#000] mx-4 md:mx-0">
                     
                 </div>

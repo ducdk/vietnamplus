@@ -1,6 +1,7 @@
 import lottieWeb from 'https://cdn.skypack.dev/lottie-web';
 
 const playIconContainer = document.getElementById('play-icon');
+const iconplay = document.getElementById('iconplay');
 const audioPlayerContainer = document.getElementById('audio-player-container');
 const seekSlider = document.getElementById('seek-slider');
 const volumeSlider = document.getElementById('volume-slider');
@@ -29,6 +30,19 @@ const muteAnimation = lottieWeb.loadAnimation({
 playAnimation.goToAndStop(14, true);
 
 playIconContainer.addEventListener('click', () => {
+    if(playState === 'play') {
+        audio.play();
+        playAnimation.playSegments([14, 27], true);
+        requestAnimationFrame(whilePlaying);
+        playState = 'pause';
+    } else {
+        audio.pause();
+        playAnimation.playSegments([0, 14], true);
+        cancelAnimationFrame(raf);
+        playState = 'play';
+    }
+});
+iconplay.addEventListener('click', () => {
     if(playState === 'play') {
         audio.play();
         playAnimation.playSegments([14, 27], true);
