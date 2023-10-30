@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VietnamPlus</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 </head>
 
 <body class="main">
@@ -41,12 +42,12 @@
                 <source src="https://gf-cdn.stpsoftware.co/video.MP4" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
-            <div class="vnp-play absolute top-0 left-0 w-[100%] h-[100%] flex items-center justify-center" onclick="start()">
+            <div id="vnp-play" class="vnp-play absolute top-0 left-0 w-[100%] h-[100%] flex items-center justify-center" onclick="start()">
                 <img src="./images/play.svg" alt="" srcset="" class="w-[120px] h-[120px] cursor-pointer">
             </div>
             <div class="vnp-content">
-                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="font-montserrat text-[15px] md:text-[20px]">#Tổng Biên tập Báo Nhân Dân</div>
-                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="font-butler text-[22px] md:text-[40px] font-bold">Lê Quốc Minh</div>
+                <div data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="font-montserrat text-[15px] md:text-[20px]">#Tổng Biên tập Báo Nhân Dân</div>
+                <div data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-bottom" class="font-butler text-[22px] md:text-[40px] font-bold">Lê Quốc Minh</div>
             </div>
         </div>
     </div>
@@ -56,7 +57,7 @@
         <div id="intro" class="container-wrap flex justify-center items-center mt-[275px] md:mt-[160px]">
             <div class="container mx-auto vnp-start flex flex-col justify-center items-center">
                 <div class="vnp-logo" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <img src="./images/logo.png" alt="" srcset="">
+                    <img src="./images/logo.png" alt="" srcset="" class="w-[111px] md:w-full">
                 </div>
                 <div data-aos="fade-up" class="vnp-title mt-[54px] leading-n font-butler text-[32px] md:text-[64px] font-bold text-center">
                     HÀNH TRÌNH 15 NĂM VIETNAMPLUS
@@ -139,13 +140,13 @@
 
         <div class="container-wrap flex justify-center items-center mt-[72px] md:mt-[200px]">
             <div class="vnp-video-2 relative">
-                <img src="./images/bg2.png" alt="" srcset="" class="w-full hidden md:block">
-                <img src="./images/bg-mobile.png" alt="" srcset="" class="w-full block md:hidden">
+                <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="./images/bg2.png" alt="" srcset="" class="w-full hidden md:block">
+                <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="./images/bg-mobile.png" alt="" srcset="" class="w-full block md:hidden">
                 <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center flex-col z-10">
                     <div class="relative w-full h-full flex items-center justify-center flex-col">
                         <div class="playmusic relative flex items-center justify-center">
-                            <img src="./images/playmusic.svg" alt="" srcset="" class="w-full music-play">
-                            <svg id="iconplay" class="absolute" xmlns="http://www.w3.org/2000/svg" width="108" height="125" viewBox="0 0 108 125" fill="none">
+                            <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="./images/playmusic.svg" alt="" srcset="" class="w-full music-play">
+                            <svg data-aos="fade-up" data-aos-anchor-placement="top-bottom" id="iconplay" class="absolute" xmlns="http://www.w3.org/2000/svg" width="108" height="125" viewBox="0 0 108 125" fill="none">
                                 <g filter="url(#filter0_b_223_339)">
                                 <path d="M42.2765 32.048L76.9319 55.6685C77.933 56.351 78.7626 57.3224 79.3389 58.4868C79.9151 59.6513 80.2182 60.9687 80.2182 62.3092C80.2182 63.6497 79.9151 64.9671 79.3389 66.1315C78.7626 67.296 77.933 68.2673 76.9319 68.9499L42.2765 92.5704C41.2594 93.2641 40.1011 93.6352 38.9193 93.646C37.7375 93.6567 36.5742 93.3068 35.5478 92.6318C34.5213 91.9567 33.6682 90.9806 33.0751 89.8026C32.4819 88.6245 32.17 87.2865 32.1709 85.9246V38.6938C32.17 37.3319 32.4819 35.9939 33.0751 34.8158C33.6682 33.6378 34.5213 32.6616 35.5478 31.9866C36.5742 31.3115 37.7375 30.9616 38.9193 30.9724C40.1011 30.9832 41.2594 31.3543 42.2765 32.048Z" fill="white"/>
                                 </g>
@@ -158,6 +159,7 @@
                                 </filter>
                                 </defs>
                             </svg>
+                            <svg data-aos="fade-up" data-aos-anchor-placement="top-bottom" id="iconpause" class="absolute" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g fill="white"><title>pause</title><rect width="6" height="16" x="3" y="2" rx="1" ry="1"/><rect width="6" height="16" x="11" y="2" rx="1" ry="1"/></g></svg>
                         </div>
                         <div id="lyricer"></div>
                         <!-- <audio id="player" class="mt-4" controls>
@@ -167,9 +169,9 @@
                             <audio id="player" src="./images/vietnamplusca.mp3" preload="metadata">
                             </audio>
                             <button id="play-icon"></button>
-                            <span id="current-time" class="time">0:00</span>
-                            <input type="range" id="seek-slider" max="100" value="0">
-                            <span id="duration" class="time">0:00</span>
+                            <span data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" id="current-time" class="time">0:00</span>
+                            <input data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-bottom" type="range" id="seek-slider" max="100" value="0">
+                            <span data-aos="fade-up" data-aos-delay="700" data-aos-anchor-placement="top-bottom" id="duration" class="time">0:00</span>
                             <output id="volume-output">100</output>
                             <input type="range" id="volume-slider" max="100" value="100">
                             <button id="mute-icon"></button>
@@ -180,26 +182,40 @@
             </div>
         </div>
     
-        <div class="container-wrap flex justify-center items-center" >
+        <div class="container-wrap flex justify-center items-center section__link" >
             <div class="container mx-auto vnp-timeline flex flex-col-reverse md:flex-row items-center gap-6 pt-[100px]">
-                <div class="vnp-timeline w-full md:w-[60%] mx-8 md:mx-0">
-                    <div class="vnp-timeline-title font-butler hidden md:flex text-[40px] md:text-[64px] ml-8 md:ml-[10%] font-bold">Timeline</div>
-                    <div class="swiper vnp-timeline-wrap mt-24 ml-8 md:ml-[10%] mx-8 md:mx-0">
+                <div class="vnp-timeline w-full md:w-[60%] mx-8 md:mx-0 relative">
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom" class="vnp-timeline-title font-butler hidden md:flex text-[40px] md:text-[64px] ml-8 md:ml-[10%] font-bold">Timeline</div>
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="swiper vnp-timeline-wrap mt-8 md:mt-24 ml-8 md:ml-[10%] mx-8 md:mx-0">
                         <div id="timeline-text" class="swiper-wrapper">
                         </div>
                     </div>
+                    
+                    <div class="swiper-button-prev" >
+                        <img src="./images/dauan/link.svg" alt="" srcset="" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+                    </div>
+                    <div class="swiper-button-next" >
+                        <img src="./images/dauan/link.svg" alt="" srcset="" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+                    </div>
                 </div>
-                <div class="vnp-timeline-model-wrap relative section__link">
+                <div class="vnp-timeline-model-wrap relative">
                     <div class="vnp-timeline-title font-butler flex md:hidden justify-center text-[40px] md:text-[64px] text-center font-bold">Timeline</div>
-                    <div class="swiper vnp-timeline-model w-[300px] h-[500px] relative mt-[40px] md:mt-[0px]">
-                        <div id="timeline-model" class="swiper-wrapper">
+                    <div class="swiper vnp-timeline-model w-[500px] h-[500px] relative mt-[40px] md:mt-[0px]">
+                        <div id="timeline-model" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="swiper-wrapper">
+                            <div id="vnp-model" class="swiper-slide swiper-slide-1 vnp-model vnp-model-item vnp-model-1 w-[500px] h-[500px] z-10">
+                                <model-viewer src="./model/logo-3D.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls camera-orbit="-5.425deg 22.5deg 0.3465m" field-of-view="30deg" poster="./model/poster.webp" shadow-intensity="1">
+                                    <div class="progress-bar hide" slot="progress-bar">
+                                        <div class="update-bar"></div>
+                                    </div>
+                                    <button slot="ar-button" id="ar-button">
+                                        View in your space
+                                    </button>
+                                    <div id="ar-prompt">
+                                        <img src="./model/ar_hand_prompt.png">
+                                    </div>
+                                </model-viewer>  
+                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <img src="./images/dauan/link.svg" alt="" srcset="">
-                    </div>
-                    <div class="swiper-button-next">
-                        <img src="./images/dauan/link.svg" alt="" srcset="">
                     </div>
                 </div>
             </div>
@@ -208,7 +224,7 @@
         <div class="container-wrap flex justify-center items-center">
             <div class="container mx-auto vnp-start flex justify-center items-center gap-6 pt-[175px]">
                 <div class="vnp-dauan-list flex flex-col md:flex-row justify-center items-center gap-4 flex-1">
-                    <div class="vnp-award-item box-shadow-1 relative">
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="vnp-award-item box-shadow-1 relative">
                         <div class="vnp-dauan-stt font-butler text-[70px] md:text-[94px] font-bold mb-4">01</div>
                         <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">KHEN TẶNG CỦA ĐẢNG,</div>
                         <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">NHÀ NƯỚC</div>
@@ -222,7 +238,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="vnp-award-item box-shadow-1 relative">
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-bottom" class="vnp-award-item box-shadow-1 relative">
                         <div class="vnp-dauan-stt font-butler text-[70px] md:text-[94px] font-bold mb-4">02</div>
                         <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">GIẢI THƯỞNG </div>
                         <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">TRONG NƯỚC</div>
@@ -234,7 +250,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="vnp-award-item box-shadow-1 relative">
+                    <div data-aos="fade-up" data-aos-delay="700" data-aos-anchor-placement="top-bottom" class="vnp-award-item box-shadow-1 relative">
                         <div class="vnp-dauan-stt font-butler text-[70px] md:text-[94px] font-bold mb-4">03</div>
                         <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">GIẢI THƯỞNG</div>
                         <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">QUỐC TẾ</div>
@@ -252,12 +268,12 @@
 
         <div id="giaithuong" class="container-wrap flex flex-col justify-center items-center">
             <div class="container mx-auto vnp-start flex justify-center items-center gap-6 pt-[175px] pb-[132px]">
-                <div id="giaithuong-content" class="vnp-dauan-list flex flex-1 text-[14px] md:text-[30px] text-[#000] mx-4 md:mx-0">
+                <div data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom" id="giaithuong-content" class="vnp-dauan-list flex flex-1 text-[14px] md:text-[30px] text-[#000] mx-4 md:mx-0">
                     
                 </div>
             </div>
             <div class="container mx-auto flex gap-6 pt-[75px] pb-[100px] section__link2">
-                    <div class="swiper vnp-giaithuong-slide">
+                    <div class="swiper vnp-giaithuong-slide" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
                         <div class="swiper-wrapper vnp-giaithuong-wrapper">
                             <div class="swiper-slide vnp-giaithuong-main">
                                 <img src="./images/giaithuong/1.JPG" alt="" srcset="" class="w-full">
@@ -296,9 +312,11 @@
 
         <footer class="relative">
             <div class="container mx-auto">
-                <div class="absolute bottom-0 container copy-right h-[72px] mx-auto">
+                <div class="absolute bottom-4 container copy-right h-[72px] mx-auto">
                     <div class="flex flex-col h-full items-center justify-between md:flex-row">
-                        <div class="text-white text-[12px]">Copyright © 2021 Anysale.vn. All rights reserved</div>
+                        <div class="text-white text-[12px] w-[132px]">
+                            <img src="images/logo_white.png" alt="" srcset="">
+                        </div>
                         <div class="flex gap-10">
                             <a href="https://www.facebook.com/VietnamPlus" target="_blank" class="text-white text-[12px]">Facebook</a>
                             <a href="https://twitter.com/vietnamplus" target="_blank" class="text-white text-[12px]">Twitter</a>
@@ -313,10 +331,9 @@
     
     <svg class="dot" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true" viewBox="0 0 30 30">
         <circle r="2.5" cx="15" cy="15"/>
-        <text class="text1" x="5.5" y="19.5">Cuộn xuống</text>
+        <text class="text1" x="10" y="19.5">Vuốt</text>
         <text class="text2" x="10" y="19.5">Vuốt</text>
     </svg>
-    <!-- <div class="custom-cursor"></div> -->
 
 
     <!-- gsap -->
@@ -344,7 +361,6 @@
     <script type="module" src="./js/lyrics.js"></script>
     <script src="./js/timeline.js"></script>
     <script src="./js/dot.js"></script>
-    <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
 
     <script type="text/javascript">

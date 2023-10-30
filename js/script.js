@@ -1,16 +1,34 @@
 AOS.init();
 
+
+const vnp_video_modau = document.getElementById('vnp-video-modau');
+const vnp_play = document.getElementById('vnp-play');
+playState = 'pause';
+
+vnp_video_modau.addEventListener('click', () => {
+    if(playState === 'play') {
+        vnp_video_modau.play();
+        playState = 'pause';
+        $('.vnp-play').hide();
+    } else {
+        vnp_video_modau.pause();
+        $('.vnp-play').show();
+        playState = 'play';
+    }
+});
+
 function playVideo(play = true, on = false) {
-    const vnp_video_modau = document.getElementById('vnp-video-modau');
     if (vnp_video_modau) {
         if (play) {
             if (on) {
                 vnp_video_modau.play();
                 $('.vnp-play').hide();
+                playState = 'pause';
             }
         } else {
             vnp_video_modau.pause();
             $('.vnp-play').show();
+            playState = 'play';
         }
     }
 }
@@ -56,10 +74,10 @@ var swiper11 = new Swiper(".vnp-giaithuong-slide", {
     },
 
     // Enabled autoplay mode
-    // autoplay: {
-    //     delay: 2000,
-    //     disableOnInteraction: false
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+    },
     breakpoints: {
         640: {
           slidesPerView: 2,

@@ -2,6 +2,7 @@ import lottieWeb from 'https://cdn.skypack.dev/lottie-web';
 
 const playIconContainer = document.getElementById('play-icon');
 const iconplay = document.getElementById('iconplay');
+const iconpause = document.getElementById('iconpause');
 const audioPlayerContainer = document.getElementById('audio-player-container');
 const seekSlider = document.getElementById('seek-slider');
 const volumeSlider = document.getElementById('volume-slider');
@@ -35,11 +36,15 @@ playIconContainer.addEventListener('click', () => {
         playAnimation.playSegments([14, 27], true);
         requestAnimationFrame(whilePlaying);
         playState = 'pause';
+        iconpause.style.display = 'flex'
+        iconplay.style.display = 'none'
     } else {
         audio.pause();
         playAnimation.playSegments([0, 14], true);
         cancelAnimationFrame(raf);
         playState = 'play';
+        iconpause.style.display = 'none'
+        iconplay.style.display = 'flex'
     }
 });
 iconplay.addEventListener('click', () => {
@@ -48,11 +53,32 @@ iconplay.addEventListener('click', () => {
         playAnimation.playSegments([14, 27], true);
         requestAnimationFrame(whilePlaying);
         playState = 'pause';
+        iconpause.style.display = 'flex'
+        iconplay.style.display = 'none'
     } else {
         audio.pause();
         playAnimation.playSegments([0, 14], true);
         cancelAnimationFrame(raf);
         playState = 'play';
+        iconpause.style.display = 'none'
+        iconplay.style.display = 'flex'
+    }
+});
+iconpause.addEventListener('click', () => {
+    if(playState === 'play') {
+        audio.play();
+        playAnimation.playSegments([14, 27], true);
+        requestAnimationFrame(whilePlaying);
+        playState = 'pause';
+        iconpause.style.display = 'flex'
+        iconplay.style.display = 'none'
+    } else {
+        audio.pause();
+        playAnimation.playSegments([0, 14], true);
+        cancelAnimationFrame(raf);
+        playState = 'play';
+        iconpause.style.display = 'none'
+        iconplay.style.display = 'flex'
     }
 });
 

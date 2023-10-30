@@ -21,6 +21,10 @@
     border: 5px solid rgba(0, 0, 0, 0.1);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .font-butler {
   font-family: "Butler";
 }
@@ -296,52 +300,34 @@ ul.vnp-dauan-ul li::before {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 1s ease;
+  background-color: #C51717;
 }
 
-.vnp-timeline-model .swiper-slide:nth-child(1n) {
-  background-color: rgb(206, 17, 17);
+.vnp-timeline-model .swiper-slide-1 {
+  background-color: #C51717;
 }
 
-.vnp-timeline-model .swiper-slide:nth-child(2n) {
-  background-color: rgb(0, 140, 255);
+.vnp-timeline-model .swiper-slide-2 {
+  background-color: #F25B2B;
 }
 
-.vnp-timeline-model .swiper-slide:nth-child(3n) {
-  background-color: rgb(10, 184, 111);
+.vnp-timeline-model .swiper-slide-3 {
+  background-color: #FFA215;
 }
 
-.vnp-timeline-model .swiper-slide:nth-child(4n) {
-  background-color: rgb(211, 122, 7);
+.vnp-timeline-model .swiper-slide-4 {
+  background-color: #00AFC7;
 }
 
-.vnp-timeline-model .swiper-slide:nth-child(5n) {
-  background-color: rgb(118, 163, 12);
-}
-
-.vnp-timeline-model .swiper-slide:nth-child(6n) {
-  background-color: rgb(180, 10, 47);
-}
-
-.vnp-timeline-model .swiper-slide:nth-child(7n) {
-  background-color: rgb(35, 99, 19);
-}
-
-.vnp-timeline-model .swiper-slide:nth-child(8n) {
-  background-color: rgb(0, 68, 255);
-}
-
-.vnp-timeline-model .swiper-slide:nth-child(9n) {
-  background-color: rgb(218, 12, 218);
-}
-
-.vnp-timeline-model .swiper-slide:nth-child(10n) {
-  background-color: rgb(54, 94, 77);
+.vnp-timeline-model .swiper-slide-5 {
+  background-color: #0CC373;
 }
 
 .swiper-button-next {
-  bottom: -75px!important;
+  bottom: -25px!important;
   top: unset!important;
-  right: 110px!important;
+  right: 44%!important;
 }
 
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
@@ -349,9 +335,9 @@ ul.vnp-dauan-ul li::before {
 }
 
 .swiper-button-prev {
-  bottom: -75px!important;
+  bottom: -25px!important;
   top: unset!important;
-  left: 110px!important;
+  left: 44%!important;
   transform: rotate(180deg);
 }
 
@@ -664,11 +650,11 @@ input[type="range"]:active::-ms-thumb {
 
 .dot {
 	position: fixed;
-	width: 7em;
-	height: 7rem;
-	fill: #474787;
-	top: -4em;
-	left: -4em;
+	width: 10em;
+	height: 10em;
+	fill: #b21413bf;
+	top: -5em;
+	left: -5em;
 	opacity: 0;
 	transform: scale(0);
 	transform-origin: 50% 50%;
@@ -713,6 +699,12 @@ input[type="range"]:active::-ms-thumb {
   cursor: pointer;
 }
 
+#iconpause {
+  width: 70px;
+  height: 70px;
+  display: none;
+}
+
 @keyframes rotation {
   0% {
     transform: rotate(0);
@@ -723,9 +715,13 @@ input[type="range"]:active::-ms-thumb {
 }
 
 footer {
-  height: 412px;
+  height: 150px;
   background: linear-gradient(148deg, #E15E15 -19.27%, #C71F33 80.76%);
   width: 100vw;
+}
+
+#play-icon {
+  display: none;
 }
 
 
@@ -787,9 +783,7 @@ footer {
     font-size: 13px;
     font-weight: 400;
   }
-  #play-icon {
-    display: none;
-  }
+  
 
   #vnp-timeline-check-point {
     height: 50px;
@@ -808,5 +802,47 @@ footer {
   .vnp-giaithuong-main.swiper-slide-active {
     max-width: 338px!important;
     opacity: 1;
+  }
+
+  .swiper-button-next {
+    bottom: -25px!important;
+    top: unset!important;
+    right: 40%!important;
+  }
+  
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: ''!important;
+  }
+  
+  .swiper-button-prev {
+    bottom: -25px!important;
+    top: unset!important;
+    left: 40%!important;
+    transform: rotate(180deg);
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .vnp-timeline-model, .vnp-model {
+    width: 500px!important;
+    height: 500px!important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .vnp-timeline-model, .vnp-model {
+    width: 425px!important;
+    height: 425px!important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .vnp-timeline-model, .vnp-model {
+    width: 325px!important;
+    height: 425px!important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .vnp-timeline-model, .vnp-model {
+    width: calc(100vw - 32px)!important;
+    height: 425px!important;
   }
 }

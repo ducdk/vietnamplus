@@ -41,7 +41,7 @@
 		gsap.to(circle, {
 			duration: 0.4,
 			scale: 6,
-			fill: "#706fd3",
+			fill: "#b21413bf",
 			ease: "Power3.easeInOut",
 		});
 		gsap.to(text1, {
@@ -62,7 +62,7 @@
 			duration: 0.3,
 			scale: 1,
 			delay: 0.1,
-			fill: "#474787",
+			fill: "#b21413bf",
 			ease: "Power3.easeOut",
 		});
 		gsap.to(text1, {
@@ -82,7 +82,7 @@
 		gsap.to(circle, {
 			duration: 0.4,
 			scale: 6,
-			fill: "#706fd3",
+			fill: "#b21413bf",
 			ease: "Power3.easeInOut",
 		});
 		gsap.to(text2, {
@@ -103,7 +103,7 @@
 			duration: 0.3,
 			scale: 1,
 			delay: 0.1,
-			fill: "#474787",
+			fill: "#b21413bf",
 			ease: "Power3.easeOut",
 		});
 		gsap.to(text2, {

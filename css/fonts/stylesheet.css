@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Butler';
     src: url('Butler-UltraLight.woff2') format('woff2'),
         url('Butler-UltraLight.woff') format('woff');
@@ -52,5 +52,11 @@
         url('Butler.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
+@font-face {
+    font-family: 'Butler';
+    src: url('NewYork.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}

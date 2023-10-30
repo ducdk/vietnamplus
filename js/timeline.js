@@ -190,12 +190,11 @@ let data = [
 
 ];
 
-
 function renderTimeline() {
     let timelineText = document.getElementById('timeline-text')
-    let timelineModel = document.getElementById('timeline-model')
+    // let timelineModel = document.getElementById('timeline-model')
     let stringText = "";
-    let stringModel = "";
+    // let stringModel = "";
     data.forEach(element => {
         stringText = `
             <div class="swiper-slide vnp-timeline-main">
@@ -244,33 +243,29 @@ function renderTimeline() {
             </div>
         `
         timelineText.insertAdjacentHTML( 'beforeend', stringText )
-        timelineModel.insertAdjacentHTML( 'beforeend', stringModel )
+        // timelineModel.insertAdjacentHTML( 'beforeend', stringModel )
     });
 }
 
 renderTimeline()
 
-var swiper = new Swiper(".vnp-timeline-model", {
-    effect: "cards",
-    grabCursor: true,
-    // autoplay: {
-    //     delay: 2000,
-    //     disableOnInteraction: false
-    // },
+let t = 1;
+var swiper1 = new Swiper(".vnp-timeline-wrap", {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
 });
-var swiper1 = new Swiper(".vnp-timeline-wrap", {});
 
-swiper.on('onChanged', function (event) {
-    swiper1.slideNext()
+swiper1.on('slideNextTransitionEnd', function (event) {
+    // swiper1.slideNext()
+    $('#vnp-model').removeClass(`swiper-slide-${t%5}`);
+    t++;
+    $('#vnp-model').addClass(`swiper-slide-${t%5}`);
 });
-
-swiper.on('slideNextTransitionEnd', function (event) {
-    swiper1.slideNext()
-});
-swiper.on('slidePrevTransitionEnd', function (event) {
-    swiper1.slidePrev()
+swiper1.on('slidePrevTransitionEnd', function (event) {
+    // swiper1.slidePrev()
+    $('#vnp-model').removeClass(`swiper-slide-${t%5}`);
+    t--;
+    $('#vnp-model').addClass(`swiper-slide-${t%5}`);
 });
