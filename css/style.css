@@ -21,6 +21,35 @@
     border: 5px solid rgba(0, 0, 0, 0.1);
 }
 
+.dot {
+	position: fixed;
+	width: 10em;
+	height: 10em;
+	fill: #b21413bf;
+	top: -5em;
+	left: -5em;
+	opacity: 0;
+	transform: scale(0);
+	transform-origin: 50% 50%;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1;
+  mix-blend-mode: difference;
+
+	.text1 {
+		font: normal 4px sans-serif;
+		/* text-transform: uppercase; */
+		fill: #eee;
+		opacity: 0;
+	}
+  .text2 {
+		font: normal 4px sans-serif;
+		/* text-transform: uppercase; */
+		fill: #eee;
+		opacity: 0;
+	}
+}
+
 body {
   overflow-x: hidden;
 }
@@ -647,36 +676,6 @@ input[type="range"]:active::-ms-thumb {
 #giaithuong-content span {
     font-weight: 500;
 }
-
-.dot {
-	position: fixed;
-	width: 10em;
-	height: 10em;
-	fill: #b21413bf;
-	top: -5em;
-	left: -5em;
-	opacity: 0;
-	transform: scale(0);
-	transform-origin: 50% 50%;
-	user-select: none;
-	pointer-events: none;
-	z-index: 1;
-  mix-blend-mode: difference;
-
-	.text1 {
-		font: normal 4px sans-serif;
-		/* text-transform: uppercase; */
-		fill: #eee;
-		opacity: 0;
-	}
-  .text2 {
-		font: normal 4px sans-serif;
-		/* text-transform: uppercase; */
-		fill: #eee;
-		opacity: 0;
-	}
-}
-
 
 /* .custom-cursor {
   position: fixed;
