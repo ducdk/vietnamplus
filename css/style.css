@@ -241,6 +241,15 @@ body {
   transform: rotate(7.5deg)!important;
   z-index: 10;
 }
+
+.dauan-image-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-7.5deg)!important;
+  z-index: 11;
+}
+
 .back-link-dauan {
   transition: 0.5s;
   border-radius: 50%;
@@ -318,6 +327,15 @@ ul.vnp-dauan-ul li::before {
   left: 86px;
 }
 
+#vnp-timeline-image-point {
+  width: 130px;
+  height: 80px;
+  border-radius: 8px;
+  position: absolute;
+  top: 10px;
+  left: 110px;
+}
+
 .line-height-1 {
   line-height: 1;
 }
@@ -378,10 +396,11 @@ ul.vnp-dauan-ul li::before {
 #lyricer .lyricer-current-line {
   color: #fff!important;
   text-shadow: unset!important;
+  font-weight: 700;
 }
 
 #lyricer ul li {
-  color: rgba(255, 255, 255, 0.16)!important;
+  color: rgba(255, 255, 255, 0.1)!important;
   text-shadow: unset!important;
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
@@ -404,15 +423,15 @@ ul.vnp-dauan-ul li::before {
   color: #696969;
   border-radius: 20px;
   display: flex;
-  max-width: 397px;
-  min-height: 600px;
+  /* max-width: 397px; */
+  /* min-height: 600px; */
   padding-top: 50px;
   padding-bottom: 36px;
   padding-left: 36px;
   padding-right: 36px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   /* justify-content: center; */
   flex: 1;
   /* transition: 0.5s linear; */
@@ -420,12 +439,12 @@ ul.vnp-dauan-ul li::before {
 
 .vnp-award-item:hover {
   /* transform: scale(1.2); */
-  max-width: 462px;
-  min-height: 700px;
+  /* max-width: 462px; */
+  /* min-height: 700px; */
 }
 
 ul.vnp-award-ul {
-  max-width: 310px;
+  /* max-width: 310px; */
 }
 
 ul.vnp-award-ul li::before {
@@ -514,9 +533,9 @@ button {
 #play-icon {
     margin: 20px 2.5% 10px 2.5%;
 }
-path {
+/* path {
     stroke: #007db5;
-}
+} */
 .time {
     display: inline-block;
     width: 37px;
@@ -792,6 +811,8 @@ footer {
     left: 48px;
     width: 24px;
   }
+
+
   .vnp-award-item {
     width: calc(100% - 32px)!important;
     align-items: unset;

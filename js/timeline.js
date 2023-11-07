@@ -219,6 +219,7 @@ function renderTimeline() {
                                     </linearGradient>
                                 </defs>
                             </svg>
+                            <img id="vnp-timeline-image-point" src="./images/bg2.png" alt="" srcset="" class="">
                         </div>
                     </div>
                 </div>
