@@ -21,7 +21,7 @@
     border: 5px solid rgba(0, 0, 0, 0.1);
 }
 
-.dot {
+/* .dot {
 	position: fixed;
 	width: 10em;
 	height: 10em;
@@ -35,20 +35,18 @@
 	pointer-events: none;
 	z-index: 1;
   mix-blend-mode: difference;
-
-	.text1 {
-		font: normal 4px sans-serif;
-		/* text-transform: uppercase; */
-		fill: #eee;
-		opacity: 0;
-	}
-  .text2 {
-		font: normal 4px sans-serif;
-		/* text-transform: uppercase; */
-		fill: #eee;
-		opacity: 0;
-	}
 }
+
+.text1 {
+		font: normal 4px sans-serif;
+		fill: #eee;
+		opacity: 0;
+}
+.text2 {
+		font: normal 4px sans-serif;
+		fill: #eee;
+		opacity: 0;
+} */
 
 body {
   overflow-x: hidden;

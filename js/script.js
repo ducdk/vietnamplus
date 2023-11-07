@@ -74,10 +74,10 @@ var swiper11 = new Swiper(".vnp-giaithuong-slide", {
     },
 
     // Enabled autoplay mode
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+    },
     breakpoints: {
         640: {
           slidesPerView: 2,
