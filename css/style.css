@@ -21,6 +21,10 @@
     border: 5px solid rgba(0, 0, 0, 0.1);
 }
 
+.overlay-lyric {
+  background: rgb(190,63,62);
+  background: linear-gradient(180deg, rgba(190,63,62,0.9073005911348915) 0%, rgba(0,0,0,0.7616423278295693) 80%);
+}
 /* .dot {
 	position: fixed;
 	width: 10em;
