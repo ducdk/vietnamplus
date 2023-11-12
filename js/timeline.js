@@ -305,35 +305,35 @@ var swiper1 = new Swiper(".vnp-timeline-wrap", {
 swiper1.on('slideNextTransitionEnd', function (event) {
     // swiper1.slideNext()
     $('#vnp-model').removeClass(`swiper-slide-${t%5}`);
-    console.log(t)
-    console.log(data[t])
-    if (data[t].img !== "") {
-        $('#addimage').empty();
-        let imgtag = document.getElementById('addimage');
-        let strtag = `
-            <img id="vnp-timeline-image-point" data-aos="fade-up" data-aos-delay="500" src="${data[t].img}" alt="" srcset="" class="">
-        `;
-        imgtag.insertAdjacentHTML( 'beforeend', strtag );
-    } else {
-        $('#addimage').empty();
-    }
+    // console.log(t)
+    // console.log(data[t])
+    // if (data[t].img !== "") {
+    //     $('#addimage').empty();
+    //     let imgtag = document.getElementById('addimage');
+    //     let strtag = `
+    //         <img id="vnp-timeline-image-point" data-aos="fade-up" data-aos-delay="500" src="${data[t].img}" alt="" srcset="" class="">
+    //     `;
+    //     imgtag.insertAdjacentHTML( 'beforeend', strtag );
+    // } else {
+    //     $('#addimage').empty();
+    // }
     t++;
     $('#vnp-model').addClass(`swiper-slide-${t%5}`);
 });
 swiper1.on('slidePrevTransitionEnd', function (event) {
     // swiper1.slidePrev()
-    $('#vnp-model').removeClass(`swiper-slide-${t%5}`);
-    console.log(t)
-    if (data[t - 1].img !== "") {
-        $('#addimage').empty();
-        let imgtag = document.getElementById('addimage');
-        let strtag = `
-            <img id="vnp-timeline-image-point" data-aos="fade-up" data-aos-delay="500" src="${data[t - 1].img}" alt="" srcset="" class="">
-        `;
-        imgtag.insertAdjacentHTML( 'beforeend', strtag );
-    } else {
-        $('#addimage').empty();
-    }
+    // $('#vnp-model').removeClass(`swiper-slide-${t%5}`);
+    // console.log(t)
+    // if (data[t - 1].img !== "") {
+    //     $('#addimage').empty();
+    //     let imgtag = document.getElementById('addimage');
+    //     let strtag = `
+    //         <img id="vnp-timeline-image-point" data-aos="fade-up" data-aos-delay="500" src="${data[t - 1].img}" alt="" srcset="" class="">
+    //     `;
+    //     imgtag.insertAdjacentHTML( 'beforeend', strtag );
+    // } else {
+    //     $('#addimage').empty();
+    // }
     t--;
     $('#vnp-model').addClass(`swiper-slide-${t%5}`);
 });

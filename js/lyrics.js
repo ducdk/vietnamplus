@@ -1,8 +1,8 @@
 import lottieWeb from 'https://cdn.skypack.dev/lottie-web';
 
 const playIconContainer = document.getElementById('play-icon');
-const iconplay = document.getElementById('iconplay');
-const iconpause = document.getElementById('iconpause');
+const iconplay =  ($(window).width() > 768) ? document.getElementById('iconplay') : document.getElementById('iconplay1');
+const iconpause = ($(window).width() > 768) ? document.getElementById('iconpause') : document.getElementById('iconpause1');
 const audioPlayerContainer = document.getElementById('audio-player-container');
 const seekSlider = document.getElementById('seek-slider');
 const volumeSlider = document.getElementById('volume-slider');

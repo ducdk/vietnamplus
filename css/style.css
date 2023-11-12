@@ -163,7 +163,7 @@ body {
 }
 
 .vnp-video {
-    width: calc(100vw - 242px);
+    width: calc(100vw - 32px);
     height: calc(100vh - 32px);
     overflow: hidden;
     border-radius: 30px;
@@ -447,8 +447,8 @@ ul.vnp-dauan-ul li::before {
   color: #696969;
   border-radius: 20px;
   display: flex;
-  /* max-width: 397px; */
-  /* min-height: 600px; */
+  max-width: 397px;
+  min-height: 600px;
   padding-top: 50px;
   padding-bottom: 36px;
   padding-left: 36px;
@@ -463,8 +463,8 @@ ul.vnp-dauan-ul li::before {
 
 .vnp-award-item:hover {
   /* transform: scale(1.2); */
-  /* max-width: 462px; */
-  /* min-height: 700px; */
+  max-width: 462px;
+  min-height: 700px;
 }
 
 ul.vnp-award-ul {
