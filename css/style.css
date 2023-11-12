@@ -159,17 +159,17 @@ body {
 }
 
 .vnp-video {
-    width: calc(100vw - 32px);
+    width: calc(100vw - 242px);
     height: calc(100vh - 32px);
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 30px;
 }
 .vnp-video-2 {
-    width: calc(100vw - 32px);
+    /* width: calc(100vw - 32px); */
     /* height: calc(100vh - 32px); */
-    height: auto;
-    overflow: hidden;
-    border-radius: 16px;
+    /* height: auto; */
+    /* overflow: hidden; */
+    /* border-radius: 16px; */
 }
 
 #vnp-video-modau {
@@ -192,6 +192,16 @@ body {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
 }
 
+.vnp-content-3 {
+  position: absolute;
+  bottom: 0;
+  /* height: 153px; */
+  width: 100%;
+  padding: 24px;
+  color: white;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+}
+
 .bg-1 {
     background-image: url('../images/bg.png');
     /* background-size: 100% 100%; */
@@ -211,24 +221,24 @@ body {
     max-width: 1194px;
 }
 
+#dauan {
+  min-height: 100vh;
+}
+
 .vnp-dauan img {
   max-width: 610px;
 }
 
 .vnp-dauan-item {
-  border-radius: 20px;
   display: flex;
-  max-width: 579px;
-  min-width: 533px;
-  padding: 16px 16px 16px 35px;
+  /* min-width: 100%; */
   flex-direction: column;
   align-items: flex-start;
-  gap: 18px;
-  background: white;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+  /* gap: 18px; */
+  color: white;
 }
 
-.dauan-image-2 {
+/* .dauan-image-2 {
   transform: rotate(0deg);
 }
 
@@ -246,7 +256,7 @@ body {
   left: 0;
   transform: rotate(-7.5deg)!important;
   z-index: 11;
-}
+} */
 
 .back-link-dauan {
   transition: 0.5s;
@@ -269,7 +279,7 @@ body {
 
 ul.vnp-dauan-ul li::before {
   content: "\2022";
-  color: #696969;
+  color: white;
   font-weight: bold;
   display: inline-block; 
   width: 1em;
@@ -326,12 +336,9 @@ ul.vnp-dauan-ul li::before {
 }
 
 #vnp-timeline-image-point {
-  width: 130px;
-  height: 80px;
-  border-radius: 8px;
-  position: absolute;
-  top: 10px;
-  left: 110px;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
 }
 
 .line-height-1 {
@@ -390,23 +397,38 @@ ul.vnp-dauan-ul li::before {
   content: ''!important;
 }
 
+#lyric {
+  min-height: 100vh;
+  margin-top: -1px;
+}
+
 
 #lyricer .lyricer-current-line {
   color: #fff!important;
   text-shadow: unset!important;
   font-weight: 700;
+  opacity: 1!important;
 }
 
 #lyricer ul li {
-  color: rgba(255, 255, 255, 0.1)!important;
+  color: rgba(255, 255, 255)!important;
   text-shadow: unset!important;
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
+  opacity: 0.1;
 }
 
 #lyricer ul {
-  max-height: 400px;
+  max-height: 300px;
 }
+
+#lyricer-line0,
+#lyricer-line1,
+#lyricer-line2,
+#lyricer-line3 {
+  display: none!important;
+}
+
 
 .overlay-1 {
   opacity: 0.8;
@@ -462,6 +484,9 @@ ul.vnp-award-ul li {
 .vnp-giaithuong-slide {
   width: calc(80vw);
 }
+.vnp-dauan-slide {
+  width: 400px;
+}
 
 .vnp-giaithuong-main {
   /* width: 365px!important; */
@@ -503,11 +528,11 @@ button {
     /* margin: 100px 2.5% auto 2.5%; */
     width: 95%;
     max-width: 100%;
-    height: 132px;
+    height: 70px;
     /* background: #fff; */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 #audio-player-container::before {
     position: absolute;
@@ -721,6 +746,23 @@ input[type="range"]:active::-ms-thumb {
   display: none;
 }
 
+.wrapper {
+  display: flex;
+}
+
+.demo-gallery:not(.last) {
+  padding-bottom: 1rem;
+}
+
+.demo-text .text {
+  font-size: 140px;
+  line-height: 1;
+  font-weight: 700;
+  font-family: "Noto Sans", sans-serif;
+  -webkit-text-stroke: 2px #ef622c;
+  color: transparent;
+}
+
 @keyframes rotation {
   0% {
     transform: rotate(0);
@@ -742,6 +784,15 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
+
+  .vnp-dauan-image {
+    display: none;
+  }
+
+  .vnp-video {
+    width: calc(100vw - 32px);
+  }
+
   .vnp-dauan-item {
     min-width: calc(100% - 32px);
     width: calc(100% - 32px);
@@ -754,8 +805,9 @@ footer {
   }
 
   #lyricer ul li {
-    font-size: 13px;
-    font-weight: 700;
+    font-size: 14px;
+    /* font-weight: 700; */
+    opacity: 0.45;
   }
 
   ul.vnp-award-ul li {
@@ -788,6 +840,10 @@ footer {
   #lyricer ul li:nth-child(4),
   #lyricer ul li:nth-child(5) {
     display: none!important;
+  }
+
+  #audio-player-container {
+    justify-content: center;
   }
 
   #audio-player-container {

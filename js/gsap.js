@@ -50,38 +50,6 @@ renderTextGiaiThuong();
 
 gsap.registerPlugin(ScrollTrigger);
 
-let chars = gsap.utils.toArray(".char");
-
-gsap.to(chars, {
-    opacity: 1,
-    ease: "none",
-    stagger: 0.5,
-    scrollTrigger: {
-        trigger: "#intro",
-        scrub: true,
-        pin: true,
-        start: `top`,
-        end: `+=${window.innerHeight / 1.5}`,
-    },
-})
-
-let chars1 = gsap.utils.toArray(".char1");
-
-gsap.to(chars1, {
-    opacity: 1,
-    color: "#D90000",
-    ease: "none",
-    stagger: 0.5,
-    scrollTrigger: {
-        trigger: "#giaithuong",
-        scrub: true,
-        pin: true,
-        start: `top`,
-        end: `+=${window.innerHeight / 1.5}`,
-    },
-})
-
-
 // let dauans = gsap.utils.toArray(".dauan-image");
 
 // gsap.to(dauans, {
@@ -95,3 +63,89 @@ gsap.to(chars1, {
 //         end: `+=${window.innerHeight / 1.5}`,
 //     },
 // })
+
+
+window.addEventListener("load", function () {
+
+    let chars = gsap.utils.toArray(".char");
+
+    gsap.to(chars, {
+        opacity: 1,
+        ease: "none",
+        stagger: 0.5,
+        scrollTrigger: {
+            trigger: "#intro",
+            scrub: true,
+            pin: true,
+            start: `top`,
+            end: `+=${window.innerHeight / 1.5}`,
+        },
+    })
+
+
+    if ($(window).width() > 768) {
+        console.log($(window).width())
+        let pinBoxes = document.querySelectorAll(".vnp-dauan-list > *");
+        let pinWrap = document.querySelector(".vnp-dauan-list");
+        let pinWrapWidth = pinWrap.offsetWidth;
+        let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+      
+      
+        gsap.to(".vnp-dauan-list", {
+          scrollTrigger: {
+            // scroller: pageContainer, //locomotive-scroll
+            scrub: true,
+            trigger: "#dauan",
+            pin: true,
+            // anticipatePin: 1,
+            start: "top top",
+            end: pinWrapWidth,
+            maker: true
+          },
+          x: -horizontalScrollLength,
+          ease: "none"
+        });
+
+        console.log("load")
+    }
+
+  
+
+    // const images = gsap.utils.toArray('img');
+    // const showDemo = () => {
+    // document.body.style.overflow = 'auto';
+    // document.scrollingElement.scrollTo(0, 0);
+    // gsap.to(document.querySelector('.loader'), { autoAlpha: 0 });
+    
+    let sectionimg = gsap.utils.toArray(".section-img");
+    sectionimg.forEach((section, index) => {
+        const w = section.querySelector('.wrapper');
+        const [x, xEnd] = (index % 2) ? ['100%', (w.scrollWidth - section.offsetWidth) * -1] : [w.scrollWidth * -1, 0];
+        gsap.fromTo(w, {  x  }, {
+        x: xEnd,
+        scrollTrigger: { 
+            trigger: section, 
+            scrub: 0.5 
+        }
+        });
+    });
+    // }
+
+    
+    let chars1 = gsap.utils.toArray(".char1");
+
+    gsap.to(chars1, {
+        opacity: 1,
+        color: "#D90000",
+        ease: "none",
+        stagger: 0.5,
+        scrollTrigger: {
+            trigger: "#giaithuong",
+            scrub: true,
+            pin: true,
+            start: `top`,
+            end: `+=${window.innerHeight / 1.5}`,
+        },
+    })
+    
+  });

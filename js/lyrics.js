@@ -185,7 +185,6 @@ function renderLyric() {
     [ti:VietnamPlus Ca]\n
     [total:236220]\n
     [offset:0]\n
-    [00:00.61]VietnamPlus Ca\n
     [00:21.21]2008, chục con người trong một tòa soạn nhỏ\n
     [00:23.21]Giữa thời buổi báo chí cạnh tranh cũng ngày một khó\n
     [00:26.21]Những trục trặc đến tới tấp kể từ ngày bấm nút\n

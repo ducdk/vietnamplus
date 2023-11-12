@@ -22,7 +22,7 @@
 
 <body class="main">
 
-    <div id="loading" class="fixed flex flex-col h-[100vh] items-center justify-center loading w-[100vw]">
+    <!-- <div id="loading" class="fixed flex flex-col h-[100vh] items-center justify-center loading w-[100vw]">
         <div class="plus relative mt-[-40px]">
             <div class="loading-img">
                 <img src="./images/loading.png" alt="" srcset="">
@@ -34,22 +34,22 @@
         <div id="loading-text" class="font-[20px] text-[#CD1414] text-center">Nguồn sáng tạo vươn xa...</div>
         <div id="loading-click" class="font-[20px] text-[#CD1414] text-center hidden cursor-pointer" onclick="start()">
             Nhấn để bắt đầu</div>
-    </div>
+    </div> -->
 
 
     <div class="container-wrap flex justify-center items-center">
         <div class="vnp-video relative mt-[16px]">
             <video id="vnp-video-modau">
-                <source src="https://gf-cdn.stpsoftware.co/video.MP4" type="video/mp4">
+                <source src="https://gf-cdn.stpsoftware.co/videoo.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
             <div id="vnp-play" class="vnp-play absolute top-0 left-0 w-[100%] h-[100%] flex items-center justify-center" onclick="start()">
                 <img src="./images/play.svg" alt="" srcset="" class="w-[120px] h-[120px] cursor-pointer">
             </div>
-            <div class="vnp-content">
+            <!-- <div class="vnp-content">
                 <div data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="font-montserrat text-[15px] md:text-[20px]">#Tổng Biên tập Báo Nhân Dân</div>
                 <div data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-bottom" class="font-butler text-[22px] md:text-[40px] font-bold">Lê Quốc Minh</div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -62,7 +62,7 @@
                 </div>
                 <div data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="vnp-title mt-[54px] leading-n font-butler text-[32px] md:text-[64px] font-bold text-center">
                     <!-- HÀNH TRÌNH 15 NĂM VIETNAMPLUS -->
-                    <img src="images/nguonsangvuonxa.svg" alt="" srcset="" class="w-[600px] h-[175px]">
+                    <img src="images/nguonsangvuonxa.svg" alt="" srcset="" class="w-[90vw] md:w-[600px] h-[175px]">
                 </div>
                 <div 
                     id="intro-content" 
@@ -85,70 +85,200 @@
             </div>
         </div>
     
-        <div id="dauan" class="container-wrap flex justify-center items-center">
-            <div class="container mx-auto vnp-start flex flex-col md:flex-row justify-center items-center gap-6 pt-[175px]">
-                <div class="flex flex-1 flex-col justify-end vnp-dauan relative">
-                    <img src="./images/dauan/anh4.png" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" alt="" srcset="" class="w-full dauan-image dauan-image-2">
-                    <img src="./images/dauan/anh2.png" data-aos="fade-up" data-aos-delay="1800" data-aos-anchor-placement="top-bottom" alt="" srcset="" class="w-full dauan-image dauan-image-1">
-                    <img src="./images/dauan/anh3.png" data-aos="fade-up" data-aos-delay="2800" data-aos-anchor-placement="top-bottom" alt="" srcset="" class="w-full dauan-image dauan-image-3">
+        <div id="dauan" class="container-wrap flex bg-[#4C0C0D] mt-[195px] md:mt-[222px] overflow-hidden">
+            
+            <div id="vnp-dauan-list" class="relative mx-auto vnp-start flex flex-col md:flex-row gap-6">
+                <div class="absolute w-[100vw] h-[100vh] flex items-center justify-center">
+                    <img src="./images/dauan/bg.png" alt="" srcset="">
                 </div>
-                <div class="vnp-dauan-list flex w-full flex-col gap-4 flex-1 mt-[30px]">
-                    <div class="vnp-dauan-item relative" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
-                        <div class="vnp-dauan-stt font-butler text-[70px] md:text-[105px] font-bold">01</div>
-                        <div class="font-montserrat font-bold text-[18px] md:text-[28px] text-[#000]">DẤU ẤN NỔI BẬT</div>
-                        <div class="">
-                            <ul class="pl-4 m-0 vnp-dauan-ul text-[14px] md:text-[22px]">
-                                <li>VietnamPlus</li>
-                                <li>Mobile Trang Thăng Long - Hà Nội</li>
-                                <li>vietkieu.info</li>
-                                <li>congtynhatban.info</li>
-                            </ul>
+
+                <div class="flex justify-center items-center mt-[32px] pl-[35px] md:hidden swiper vnp-dauan-slide">
+                    <div class="swiper-wrapper vnp-giaithuong-wrapper">
+                        <div class="swiper-slide vnp-giaithuong-main relative">
+                            <div class="relative">
+                                <img src="./images/dauan/anh1.png" alt="" srcset="" class="w-full">
+                            </div>
                         </div>
-                        <div class="absolute right-[14px] md:right-[35px] bottom-[24px] back-link-dauan">
-                            <img src="./images/dauan/link.svg" alt="" srcset="">
+                        <div class="swiper-slide vnp-giaithuong-main">
+                            <div class="relative">
+                                <img src="./images/dauan/anh2.png" alt="" srcset="" class="w-full">
+                            </div>
                         </div>
-                    </div>
-                    <div class="vnp-dauan-item relative" data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-bottom">
-                        <div class="vnp-dauan-stt font-butler text-[70px] md:text-[105px] font-bold">02</div>
-                        <div class="font-montserrat font-bold text-[18px] md:text-[28px] text-[#000]">RAPNEWSPLUS</div>
-                        <div class="">
-                            <ul class="pl-4 m-0 vnp-dauan-ul text-[14px] md:text-[22px]">
-                                <li>Video dài 3’ phút</li>
-                                <li>Phát 2 tuần/lần</li>
-                                <li>Giải Độc giả trẻ thế giới - WAN-IFRA</li>
-                            </ul>
-                        </div>
-                        <div class="absolute right-[14px] md:right-[35px] bottom-[24px] back-link-dauan">
-                            <img src="./images/dauan/link.svg" alt="" srcset="">
+                        <div class="swiper-slide vnp-giaithuong-main">
+                            <div class="relative">
+                                <img src="./images/dauan/anh3.png" alt="" srcset="" class="w-full">
+                            </div>
                         </div>
                     </div>
-                    <div class="vnp-dauan-item relative" data-aos="fade-up" data-aos-delay="700" data-aos-anchor-placement="top-bottom">
-                        <div class="vnp-dauan-stt font-butler text-[70px] md:text-[105px] font-bold">03</div>
-                        <div class="font-montserrat font-bold text-[18px] md:text-[28px] text-[#000]">MỘT SỐ DỰ ÁN KHÁC</div>
-                        <div class="">
-                            <ul class="pl-4 m-0 vnp-dauan-ul text-[14px] md:text-[22px]">
-                                <li>News Game</li>
-                                <li>63 chuyên trang địa phương</li>
-                                <li>Infographics (2012)</li>
-                                <li>Mega Story (2016)</li>
-                            </ul>
+                </div>
+
+                <div class="vnp-dauan-list flex flex-col md:flex-row w-[100vw] md:w-[300vw] mt-[30px]">
+                    <div class="vnp-dauan-item-layout mt-[16px] md:mt-0 min-w-[95vw] md:min-w-[90vw] flex justify-center items-center gap-[80px] relative" >
+                        <div class="vnp-dauan-image relative min-w-[275px]">
+                            <div class="absolute z-1 bottom-[-65px] left-[-80px]">
+                                <img src="./images/dauan/vn.png" alt="" srcset="" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+                            </div>
+                            <div class="z-10">
+                                <img src="./images/dauan/anh1.png" alt="" srcset="" class="w-full z-10" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+                            </div>
                         </div>
-                        <div class="absolute right-[14px] md:right-[35px] bottom-[24px] back-link-dauan">
-                            <img src="./images/dauan/link.svg" alt="" srcset="">
+                        <div class="vnp-dauan-item relative min-h-[260px] md:min-h-[450px] pl-[50px] pt-[25px]" >
+                            <div class="absolute top-0 left-0 h-full">
+                                <img src="./images/dauan/p1.png" alt="" srcset="" class="w-full h-full" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+                            </div>
+                            <div class="absolute top-[35px] md:top-[55px] left-[-11px] md:left-[-16px] w-[24px] md:w-[36px]" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+                                <img src="./images/dauan/p2.svg" alt="" srcset="" class="w-full">
+                            </div>
+                            <div class="vnp-dauan-stt font-butler text-[54px] md:text-[96px] font-bold" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">01</div>
+                            <div class="font-montserrat font-bold text-[22px] md:text-[40px] mt-[7px] md:mt-[13px]" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">DẤU ẤN NỔI BẬT</div>
+                            <div class="mt-[30px] md:mt-[40px] w-[95%] md:w-[95%]" data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-bottom">
+                                <ul class="pl-4 md:pl-8 m-0 vnp-dauan-ul text-[13px] md:text-[24px]">
+                                    <li>
+                                        <a target="_blank" href="https://www.vietnamplus.vn/tongbithu_nga/index.html">Xứng đáng tầm vóc Báo Đối ngoại Quốc gia</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.vietnamplus.vn/fansipan/index.html">Tiên phong ứng dụng công nghệ</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.vietnamplus.vn/duongsatbacnam/">Khởi đầu cho nhiều trào lưu báo chí tại Việt Nam</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-[16px] md:mt-[36px] back-link-dauan" data-aos="fade-up" data-aos-delay="700" data-aos-anchor-placement="top-bottom">
+                                <img src="./images/dauan/link.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="vnp-dauan-item-layout mt-[16px] md:mt-0 min-w-[95vw] md:min-w-[90vw] flex justify-center items-center gap-[80px] relative" >
+                        <div class="vnp-dauan-image relative min-w-[275px]">
+                            <div class="absolute z-1 bottom-[-65px] left-[-80px]" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+                                <img src="./images/dauan/vn.png" alt="" srcset="">
+                            </div>
+                            <div class="z-10">
+                                <img src="./images/dauan/anh2.png" alt="" srcset="" class="w-full z-10" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+                            </div>
+                        </div>
+                        <div class="vnp-dauan-item relative min-h-[260px] md:min-h-[450px] pl-[50px] pt-[25px]" >
+                            <div class="absolute top-0 left-0 h-full">
+                                <img src="./images/dauan/p1.png" alt="" srcset="" class="w-full h-full" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+                            </div>
+                            <div class="absolute top-[35px] md:top-[55px] left-[-11px] md:left-[-16px] w-[24px] md:w-[36px]">
+                                <img src="./images/dauan/p2.svg" alt="" srcset="" class="w-full" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+                            </div>
+                            <div class="vnp-dauan-stt font-butler text-[54px] md:text-[96px] font-bold" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">02</div>
+                            <div class="font-montserrat font-bold text-[22px] md:text-[40px] mt-[7px] md:mt-[13px]" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">SÁNG TẠO KHÔNG NGỪNG</div>
+                            <div class="mt-[30px] md:mt-[40px] w-[95%] md:w-[95%]" data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-bottom">
+                                <ul class="pl-4 md:pl-8 m-0 vnp-dauan-ul text-[13px] md:text-[24px]">
+                                    <li>
+                                        <a target="_blank" href="https://www.youtube.com/@RapNewsPLUS">Đột phá với ý tưởng đưa tin bằng nhạc Rap</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://worldnewsday.org/">Một trong những tòa soạn nhỏ sáng tạo nhất thế giới do WAN-IFRA bình chọn</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.vietnamplus.vn/san-pham-chatbot-cua-ttxvn-doat-giai-chat-luong-thong-tan-cua-oana/606338.vnp">Tương tác với độc giả bằng Chatbot, WebPush, Newsletter</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-[16px] md:mt-[36px] back-link-dauan" data-aos="fade-up" data-aos-delay="700" data-aos-anchor-placement="top-bottom">
+                                <img src="./images/dauan/link.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vnp-dauan-item-layout mt-[16px] md:mt-0 min-w-[95vw] md:min-w-[90vw] flex justify-center items-center gap-[80px] relative" >
+                        <div class="vnp-dauan-image relative min-w-[275px]">
+                            <div class="absolute z-1 bottom-[-65px] left-[-80px]">
+                                <img src="./images/dauan/vn.png" alt="" srcset="" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+                            </div>
+                            <div class="z-10">
+                                <img src="./images/dauan/anh3.png" alt="" srcset="" class="w-full z-10" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+                            </div>
+                        </div>
+                        <div class="vnp-dauan-item relative min-h-[260px] md:min-h-[450px] pl-[50px] pt-[25px]" >
+                            <div class="absolute top-0 left-0 h-full">
+                                <img src="./images/dauan/p1.png" alt="" srcset="" class="w-full h-full" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+                            </div>
+                            <div class="absolute top-[35px] md:top-[55px] left-[-11px] md:left-[-16px] w-[24px] md:w-[36px]">
+                                <img src="./images/dauan/p2.svg" alt="" srcset="" class="w-full" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+                            </div>
+                            <div class="vnp-dauan-stt font-butler text-[54px] md:text-[96px] font-bold" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">03</div>
+                            <div class="font-montserrat font-bold text-[22px] md:text-[40px] mt-[7px] md:mt-[13px]" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">SẢN PHẨM ĐỘC ĐÁO</div>
+                            <div class="mt-[30px] md:mt-[40px] w-[95%] md:w-[95%]" data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-bottom">
+                                <ul class="pl-4 md:pl-8 m-0 vnp-dauan-ul text-[13px] md:text-[24px]">
+                                    <li>
+                                        <a target="_blank" href="#">Báo đầu tiên thu phí độc giả</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.vietnamplus.vn/newsgame.vnp">Báo đầu tiên áp dụng NewsGame, Timeline</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="#">Hoàn tất hệ sinh thái số, đưa Podcast lên nền tảng loa thông minh</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-[16px] md:mt-[36px] back-link-dauan" data-aos="fade-up" data-aos-delay="700" data-aos-anchor-placement="top-bottom">
+                                <img src="./images/dauan/link.svg" alt="" srcset="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container-wrap flex justify-center items-center mt-[72px] md:mt-[200px]">
-            <div class="vnp-video-2 relative">
-                <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="./images/bg2.png" alt="" srcset="" class="w-full hidden md:block">
-                <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="./images/bg-mobile.png" alt="" srcset="" class="w-full block md:hidden">
-                <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center flex-col z-10">
-                    <div class="relative w-full h-full flex items-center justify-center flex-col">
-                        <div class="playmusic relative flex items-center justify-center">
-                            <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="./images/playmusic.svg" alt="" srcset="" class="w-full music-play">
+        <div id="lyric" class="container-wrap relative flex justify-center items-center bg-[#4C0C0D]">
+            <div data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="absolute top-0 right-0">
+                <img src="./images/vnplus.png" alt="" srcset="" class="w-full">
+            </div>
+            <div data-aos="fade-up" data-aos-delay="700" data-aos-anchor-placement="top-bottom" class="absolute bottom-0 left-0">
+                <img src="./images/vnplus2.png" alt="" srcset="" class="w-full">
+            </div>
+            <div class="container mx-auto vnp-video-2 relative">
+                <div class="w-full h-full flex items-center justify-center">
+                    <div class="relative w-full h-full flex flex-col items-center md:items-start">
+                        <div class="vnp-song relative mx-6 md:mx-0">
+                            <div class="text-[20px] md:text-[20px] text-white font-medium z-10" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">#Song</div>
+                            <div class="text-[36px] md:text-[50px] text-white font-bold z-10" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">VietNamPlus Ca</div>
+                            <div class="absolute top-[-170px] left-[-20px] opacity-10">
+                                <img src="./images/plus.png" alt="" srcset="" class="w-full">
+                            </div>
+                            <div class="flex md:hidden items-center justify-center my-8" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+                                <img src="./images/imgplay.svg" alt="" srcset="" class="w-[40%] music-play">
+                                <div class="absolute flex items-center justify-center cursor-pointer">
+                                    <svg data-aos="fade-up" data-aos-anchor-placement="top-bottom" id="iconplay" class="absolute" xmlns="http://www.w3.org/2000/svg" width="108" height="125" viewBox="0 0 108 125" fill="none">
+                                        <g filter="url(#filter0_b_223_339)">
+                                        <path d="M42.2765 32.048L76.9319 55.6685C77.933 56.351 78.7626 57.3224 79.3389 58.4868C79.9151 59.6513 80.2182 60.9687 80.2182 62.3092C80.2182 63.6497 79.9151 64.9671 79.3389 66.1315C78.7626 67.296 77.933 68.2673 76.9319 68.9499L42.2765 92.5704C41.2594 93.2641 40.1011 93.6352 38.9193 93.646C37.7375 93.6567 36.5742 93.3068 35.5478 92.6318C34.5213 91.9567 33.6682 90.9806 33.0751 89.8026C32.4819 88.6245 32.17 87.2865 32.1709 85.9246V38.6938C32.17 37.3319 32.4819 35.9939 33.0751 34.8158C33.6682 33.6378 34.5213 32.6616 35.5478 31.9866C36.5742 31.3115 37.7375 30.9616 38.9193 30.9724C40.1011 30.9832 41.2594 31.3543 42.2765 32.048Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_b_223_339" x="17.2859" y="16.0872" width="77.8169" height="92.4441" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="7.4425"/>
+                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_223_339"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_223_339" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>
+                                    <svg data-aos="fade-up" data-aos-anchor-placement="top-bottom" id="iconpause" class="absolute" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g fill="white"><title>pause</title><rect width="6" height="16" x="3" y="2" rx="1" ry="1"/><rect width="6" height="16" x="11" y="2" rx="1" ry="1"/></g></svg>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div id="lyricer" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom"></div>
+                        <div id="audio-player-container" class="items-center md:items-start">
+                            <audio id="player" src="./images/vietnamplusca.mp3" preload="metadata">
+                            </audio>
+                            <button id="play-icon"></button>
+                            <span data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" id="current-time" class="time">0:00</span>
+                            <input data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-bottom" type="range" id="seek-slider" max="100" value="0">
+                            <span data-aos="fade-up" data-aos-delay="700" data-aos-anchor-placement="top-bottom" id="duration" class="time">0:00</span>
+                            <output id="volume-output">100</output>
+                            <input type="range" id="volume-slider" max="100" value="100">
+                            <button id="mute-icon"></button>
+                          </div>
+                    </div>
+                    <div class="hidden md:flex items-center justify-center" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+                        <img src="./images/imgplay.svg" alt="" srcset="" class="w-full music-play">
+                        <div class="absolute flex items-center justify-center cursor-pointer">
                             <svg data-aos="fade-up" data-aos-anchor-placement="top-bottom" id="iconplay" class="absolute" xmlns="http://www.w3.org/2000/svg" width="108" height="125" viewBox="0 0 108 125" fill="none">
                                 <g filter="url(#filter0_b_223_339)">
                                 <path d="M42.2765 32.048L76.9319 55.6685C77.933 56.351 78.7626 57.3224 79.3389 58.4868C79.9151 59.6513 80.2182 60.9687 80.2182 62.3092C80.2182 63.6497 79.9151 64.9671 79.3389 66.1315C78.7626 67.296 77.933 68.2673 76.9319 68.9499L42.2765 92.5704C41.2594 93.2641 40.1011 93.6352 38.9193 93.646C37.7375 93.6567 36.5742 93.3068 35.5478 92.6318C34.5213 91.9567 33.6682 90.9806 33.0751 89.8026C32.4819 88.6245 32.17 87.2865 32.1709 85.9246V38.6938C32.17 37.3319 32.4819 35.9939 33.0751 34.8158C33.6682 33.6378 34.5213 32.6616 35.5478 31.9866C36.5742 31.3115 37.7375 30.9616 38.9193 30.9724C40.1011 30.9832 41.2594 31.3543 42.2765 32.048Z" fill="white"/>
@@ -163,25 +293,10 @@
                                 </defs>
                             </svg>
                             <svg data-aos="fade-up" data-aos-anchor-placement="top-bottom" id="iconpause" class="absolute" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g fill="white"><title>pause</title><rect width="6" height="16" x="3" y="2" rx="1" ry="1"/><rect width="6" height="16" x="11" y="2" rx="1" ry="1"/></g></svg>
+                        
                         </div>
-                        <div id="lyricer"></div>
-                        <!-- <audio id="player" class="mt-4" controls>
-                            <source src="./images/mp3.mp3" type="audio/mpeg">
-                        </audio> -->
-                        <div id="audio-player-container">
-                            <audio id="player" src="./images/vietnamplusca.mp3" preload="metadata">
-                            </audio>
-                            <button id="play-icon"></button>
-                            <span data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" id="current-time" class="time">0:00</span>
-                            <input data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-bottom" type="range" id="seek-slider" max="100" value="0">
-                            <span data-aos="fade-up" data-aos-delay="700" data-aos-anchor-placement="top-bottom" id="duration" class="time">0:00</span>
-                            <output id="volume-output">100</output>
-                            <input type="range" id="volume-slider" max="100" value="100">
-                            <button id="mute-icon"></button>
-                          </div>
                     </div>
                 </div>
-                <div class="absolute bottom-0 left-0 w-full h-[200px] overlay-1 rounded-[24px]"></div>
             </div>
         </div>
     
@@ -195,15 +310,18 @@
                     </div>
                     
                     <div class="swiper-button-prev" >
-                        <img src="./images/dauan/link.svg" alt="" srcset="" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+                        <img src="./images/dauan/link2.svg" alt="" srcset="" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
                     </div>
                     <div class="swiper-button-next" >
-                        <img src="./images/dauan/link.svg" alt="" srcset="" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+                        <img src="./images/dauan/link2.svg" alt="" srcset="" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
                     </div>
                 </div>
                 <div class="vnp-timeline-model-wrap relative">
                     <div class="vnp-timeline-title font-butler flex md:hidden justify-center text-[40px] md:text-[64px] text-center font-bold">Timeline</div>
                     <div class="swiper vnp-timeline-model w-[500px] h-[500px] relative mt-[40px] md:mt-[0px]">
+                        <div id="addimage" class="absolute h-full left-0 top-0 w-full z-10">
+                            <img id="vnp-timeline-image-point" data-aos="fade-up" data-aos-delay="300" src="./images/timeline/a1.png" alt="" srcset="" class="">
+                        </div>
                         <div id="timeline-model" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="swiper-wrapper">
                             <div id="vnp-model" class="swiper-slide swiper-slide-1 vnp-model vnp-model-item vnp-model-1 w-[500px] h-[500px] z-10">
                                 <model-viewer src="./model/logo-3D.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls camera-orbit="-5.425deg 22.5deg 0.3465m" field-of-view="30deg" poster="./model/poster.webp" shadow-intensity="1">
@@ -224,9 +342,83 @@
             </div>
         </div>
 
-        <div class="container-wrap flex justify-center items-center">
+        <div id="imageall" class="container-wrap flex flex-col justify-center items-center mt-[175px] overflow-hidden">
+            <section class="demo-text section-img">
+                <div class="wrapper text uppercase">
+                  Vietnam&nbsp;Plus&nbsp;Special&nbsp;Moment
+                </div>
+            </section>
+            <section class="demo-gallery section-img">
+                <ul class="wrapper">
+                    <li>
+                        <img height="400px" src="./images/all/b1.png" width="auto">
+                    </li>
+                    <li>
+                        <img height="400px" src="./images/all/b2.png" width="auto">
+                    </li>
+                    <li>
+                        <img height="400px" src="./images/all/b3.png" width="auto">
+                    </li>
+                </ul>
+            </section>
+            <section class="demo-gallery section-img">
+                <ul class="wrapper">
+                    <li>
+                        <img height="400px" src="./images/all/c1.png" width="auto">
+                    </li>
+                    <li>
+                        <img height="400px" src="./images/all/c2.png" width="auto">
+                    </li>
+                    <li>
+                        <img height="400px" src="./images/all/c3.png" width="auto">
+                    </li>
+                </ul>
+            </section>
+            <section class="demo-gallery section-img">
+                <ul class="wrapper">
+                    <li>
+                        <img height="400px" src="./images/all/d1.png" width="auto">
+                    </li>
+                    <li>
+                        <img height="400px" src="./images/all/d2.png" width="auto">
+                    </li>
+                    <li>
+                        <img height="400px" src="./images/all/d3.png" width="auto">
+                    </li>
+                    <li>
+                        <img height="400px" src="./images/all/d4.png" width="auto">
+                    </li>
+                </ul>
+            </section>
+            <section class="demo-gallery section-img">
+                <ul class="wrapper">
+                    <li>
+                        <img height="400px" src="./images/all/e1.png" width="auto">
+                    </li>
+                    <li>
+                        <img height="400px" src="./images/all/e2.png" width="auto">
+                    </li>
+                    <li>
+                        <img height="400px" src="./images/all/e3.png" width="auto">
+                    </li>
+                    <li>
+                        <img height="400px" src="./images/all/e4.png" width="auto">
+                    </li>
+                    <li>
+                        <img height="400px" src="./images/all/e5.png" width="auto">
+                    </li>
+                </ul>
+            </section>
+            <section class="demo-text section-img">
+                <div class="wrapper text uppercase">
+                    Vietnam&nbsp;Plus&nbsp;Special&nbsp;Moment
+                </div>
+            </section>
+        </div>
+
+        <!-- <div class="container-wrap flex justify-center items-center">
             <div class="container mx-auto vnp-start flex justify-center items-center gap-6 pt-[175px]">
-                <div class="vnp-dauan-list flex flex-col justify-center items-center gap-4 flex-1">
+                <div class=" flex flex-col justify-center items-center gap-4 flex-1">
                     <div class="flex w-full flex-col md:flex-row gap-4">
                         <img data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" src="./images/rec.png" alt="" srcset="" class="max-w-[400px] w-full">
                         <div data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="vnp-award-item box-shadow-1 relative">
@@ -273,11 +465,56 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+
+        <div class="container-wrap flex justify-center items-center">
+            <div class="container mx-auto vnp-start flex justify-center items-center gap-6 pt-[175px]">
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4 flex-1">
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="vnp-award-item box-shadow-1 relative">
+                        <div class="vnp-dauan-stt font-butler text-[70px] md:text-[94px] font-bold mb-4">01</div>
+                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">KHEN TẶNG CỦA ĐẢNG,</div>
+                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">NHÀ NƯỚC</div>
+                        <div class="mt-4">
+                            <ul class="pl-4 m-0 vnp-award-ul text-[12px] md:text-[18px]">
+                                <li>13/11/2013: Huân chương Lao động hạng Ba</li>
+                                <li>13/11/2018: Huân chương Lao động Hạng Nhì</li>
+                                <li>13/11/2023: Huân chương Lao động Hạng Nhất</li>
+                                <li>Ba lần nhận Cờ Thi đua Chính phủ (các năm 2010, 2012, 2016)</li>
+                                <li>Bằng khen của Thủ tướng Chính phủ (năm 2012)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-bottom" class="vnp-award-item box-shadow-1 relative">
+                        <div class="vnp-dauan-stt font-butler text-[70px] md:text-[94px] font-bold mb-4">02</div>
+                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">GIẢI THƯỞNG </div>
+                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">TRONG NƯỚC</div>
+                        <div class="mt-4">
+                            <ul class="pl-4 m-0 vnp-award-ul text-[12px] md:text-[18px]">
+                                <li>2012-2023, 11 lần liên tiếp dành Giải Báo chí Quốc Gia với 20 giải, trong đó có: 6 Giải A, 8 Giải B, 5 Giải C, 1 Giải Khuyến Khích</li>
+                                <li>2014-2023: 19 lần liên tiếp dành Giải thưởng Toàn quốc về Thông tin Đối ngoại, trong đó có: 5 Giải Nhất, 6 Giải Nhì, 4 Giải Ba và 4 Giải Khuyến khích</li>
+                                <li>2016-2023: 6 lần giành Giải Búa liềm Vàng trong đó có 1 Giải Nhất, 3 Giải Ba và 2 Giải Khuyến khích</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="700" data-aos-anchor-placement="top-bottom" class="vnp-award-item box-shadow-1 relative">
+                        <div class="vnp-dauan-stt font-butler text-[70px] md:text-[94px] font-bold mb-4">03</div>
+                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">GIẢI THƯỞNG</div>
+                        <div class="font-montserrat font-bold text-[20px] md:text-[22px] text-[#000]">QUỐC TẾ</div>
+                        <div class="mt-4">
+                            <ul class="pl-4 m-0 vnp-award-ul text-[12px] md:text-[18px]" >
+                                <li>11/2014: Giải Nhất ở hạng mục Digital First cho loạt RapNewsPlus của WAN-IFRA</li>
+                                <li>2015: Được WAN-IFRA chọn là một trong năm tòa soạn nhỏ nhưng sáng tạo nhất thế giới </li>
+                                <li>4/2019: Sản phẩm Chatbot của VietnamPlus đọat “Giải thưởng xuất sắc chất lượng thông tấn” của OANA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="giaithuong" class="container-wrap flex flex-col justify-center items-center">
             <div class="container mx-auto vnp-start flex justify-center items-center gap-6 pt-[175px] pb-[132px]">
-                <div data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom" id="giaithuong-content" class="vnp-dauan-list flex flex-1 text-[14px] md:text-[30px] text-[#000] mx-4 md:mx-0">
+                <div data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom" id="giaithuong-content" class="flex flex-1 text-[14px] md:text-[30px] text-[#000] mx-4 md:mx-0">
                     
                 </div>
             </div>
@@ -286,91 +523,56 @@
                         <div class="swiper-wrapper vnp-giaithuong-wrapper">
                             <div class="swiper-slide vnp-giaithuong-main relative">
                                 <div class="relative">
-                                    <img src="./images/giaithuong/1.JPG" alt="" srcset="" class="w-full">
-                                    <div class="vnp-content absolute bottom-0 left-0 w-full h-[120px] rounded-[20px]">
-                                        <div class="font-montserrat text-[15px] md:text-[20px]">#Title</div>
-                                        <div class="font-butler text-[22px] md:text-[40px] font-bold">Name</div>
+                                    <img src="./images/giaithuong/1.png" alt="" srcset="" class="w-full">
+                                    <div class="vnp-content-3 absolute bottom-0 left-0 w-full rounded-[20px]">
+                                        <div class="font-montserrat font-bold text-[156x] md:text-[204x]">Ông Lê Quốc Minh</div>
+                                        <div class="font-montserrat text-[13px] md:text-[16px]">Sau 15 năm phát triển, từ một tòa soạn nhỏ dựng tạm ở hành lang, VietnamPlus đã được vinh danh là 1 trong 5 tòa soạn nhỏ sáng tạo nhất thế giới.</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide vnp-giaithuong-main">
                                 <div class="relative">
                                     <img src="./images/giaithuong/2.JPG" alt="" srcset="" class="w-full">
-                                    <div class="vnp-content absolute bottom-0 left-0 w-full h-[120px] rounded-[20px]">
-                                        <div class="font-montserrat text-[15px] md:text-[20px]">#Title</div>
-                                        <div class="font-butler text-[22px] md:text-[40px] font-bold">Name</div>
+                                    <div class="vnp-content-3 absolute bottom-0 left-0 w-full rounded-[20px]">
+                                        <div class="font-montserrat  font-bold text-[16px] md:text-[24px]">Ông Trần Tiến Duẩn</div>
+                                        <div class="font-montserrat text-[13px] md:text-[16px]">VietnamPlus - 15 năm nỗ lực, 15 năm sáng tạo. Với tôi mới được gần 6 năm gắn bó - chưa nhiều, nhưng đủ để yêu, để nỗ lực vì gia đình Vietnam+</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide vnp-giaithuong-main">
                                 <div class="relative">
                                     <img src="./images/giaithuong/3.JPG" alt="" srcset="" class="w-full">
-                                    <div class="vnp-content absolute bottom-0 left-0 w-full h-[120px] rounded-[20px]">
-                                        <div class="font-montserrat text-[15px] md:text-[20px]">#Title</div>
-                                        <div class="font-butler text-[22px] md:text-[40px] font-bold">Name</div>
+                                    <div class="vnp-content-3 absolute bottom-0 left-0 w-full rounded-[20px]">
+                                        <div class="font-montserrat  font-bold text-[16px] md:text-[24px]">Bà Đoàn Ngọc Thu</div>
+                                        <div class="font-montserrat text-[13px] md:text-[16px]">Ban đầu, tôi nghĩ là trách nhiệm, nhưng ngay sau đó, tôi hiểu, VietnamPlus với mình là Duyên, là Tình yêu!                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide vnp-giaithuong-main">
                                 <div class="relative">
                                     <img src="./images/giaithuong/4.JPG" alt="" srcset="" class="w-full">
-                                    <div class="vnp-content absolute bottom-0 left-0 w-full h-[120px] rounded-[20px]">
-                                        <div class="font-montserrat text-[15px] md:text-[20px]">#Title</div>
-                                        <div class="font-butler text-[22px] md:text-[40px] font-bold">Name</div>
+                                    <div class="vnp-content-3 absolute bottom-0 left-0 w-full rounded-[20px]">
+                                        <div class="font-montserrat  font-bold text-[16px] md:text-[24px]">Bà Nguyễn Thị Tám</div>
+                                        <div class="font-montserrat text-[13px] md:text-[16px]">15 năm là khoảng thời gian "vừa vặn" để chiêm nghiệm. Tôi tự hào đã bước đi trên con đường được lựa chọn đúng.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide vnp-giaithuong-main">
                                 <div class="relative">
                                     <img src="./images/giaithuong/5.JPG" alt="" srcset="" class="w-full">
-                                    <div class="vnp-content absolute bottom-0 left-0 w-full h-[120px] rounded-[20px]">
-                                        <div class="font-montserrat text-[15px] md:text-[20px]">#Title</div>
-                                        <div class="font-butler text-[22px] md:text-[40px] font-bold">Name</div>
+                                    <div class="vnp-content-3 absolute bottom-0 left-0 w-full rounded-[20px]">
+                                        <div class="font-montserrat  font-bold text-[16px] md:text-[24px]">Đỗ Huy</div>
+                                        <div class="font-montserrat text-[13px] md:text-[16px]">Sinh nhật tôi cũng đúng là ngày sinh nhật báo. Tôi chọn VietnamPlus và có lẽ VietnamPlus cũng chọn tôi.                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide vnp-giaithuong-main">
                                 <div class="relative">
-                                    <img src="./images/giaithuong/1.JPG" alt="" srcset="" class="w-full">
-                                    <div class="vnp-content absolute bottom-0 left-0 w-full h-[120px] rounded-[20px]">
-                                        <div class="font-montserrat text-[15px] md:text-[20px]">#Title</div>
-                                        <div class="font-butler text-[22px] md:text-[40px] font-bold">Name</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide vnp-giaithuong-main">
-                                <div class="relative">
-                                    <img src="./images/giaithuong/2.JPG" alt="" srcset="" class="w-full">
-                                    <div class="vnp-content absolute bottom-0 left-0 w-full h-[120px] rounded-[20px]">
-                                        <div class="font-montserrat text-[15px] md:text-[20px]">#Title</div>
-                                        <div class="font-butler text-[22px] md:text-[40px] font-bold">Name</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide vnp-giaithuong-main">
-                                <div class="relative">
-                                    <img src="./images/giaithuong/3.JPG" alt="" srcset="" class="w-full">
-                                    <div class="vnp-content absolute bottom-0 left-0 w-full h-[120px] rounded-[20px]">
-                                        <div class="font-montserrat text-[15px] md:text-[20px]">#Title</div>
-                                        <div class="font-butler text-[22px] md:text-[40px] font-bold">Name</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide vnp-giaithuong-main">
-                                <div class="relative">
-                                    <img src="./images/giaithuong/4.JPG" alt="" srcset="" class="w-full">
-                                    <div class="vnp-content absolute bottom-0 left-0 w-full h-[120px] rounded-[20px]">
-                                        <div class="font-montserrat text-[15px] md:text-[20px]">#Title</div>
-                                        <div class="font-butler text-[22px] md:text-[40px] font-bold">Name</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide vnp-giaithuong-main">
-                                <div class="relative">
-                                    <img src="./images/giaithuong/5.JPG" alt="" srcset="" class="w-full">
-                                    <div class="vnp-content absolute bottom-0 left-0 w-full h-[120px] rounded-[20px]">
-                                        <div class="font-montserrat text-[15px] md:text-[20px]">#Title</div>
-                                        <div class="font-butler text-[22px] md:text-[40px] font-bold">Name</div>
+                                    <img src="./images/giaithuong/6.JPG" alt="" srcset="" class="w-full">
+                                    <div class="vnp-content-3 absolute bottom-0 left-0 w-full rounded-[20px]">
+                                        <div class="font-montserrat  font-bold text-[16px] md:text-[24px]">Hùng Võ</div>
+                                        <div class="font-montserrat text-[13px] md:text-[16px]">VietnamPlus, mối tình đầu, 12 năm sương gió. Cố gắng, gắn bó cũng bởi yêu thôi!</div>
                                     </div>
                                 </div>
                             </div>
@@ -435,7 +637,7 @@
     <script type="text/javascript">
         const lenis = new Lenis()
 
-        lenis.on('scroll', ScrollTrigger.update)
+        lenis.on("scroll", ScrollTrigger.update)
 
         gsap.ticker.add((time)=>{
             lenis.raf(time * 1000)
