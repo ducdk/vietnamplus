@@ -18,6 +18,11 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <meta property="og:image" content="https://gf-cdn.stpsoftware.co/fb.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    <meta property="og:image:alt" content="VietnamPlus 15 years" />
 </head>
 
 <body class="main">
@@ -39,8 +44,12 @@
 
     <div class="container-wrap flex justify-center items-center">
         <div class="vnp-video relative mt-[16px]">
-            <video id="vnp-video-modau">
+            <video id="vnp-video-modau" class="hidden md:block">
                 <source src="https://gf-cdn.stpsoftware.co/videoo.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <video id="vnp-video-modau1" class="block md:hidden">
+                <source src="https://gf-cdn.stpsoftware.co/videom.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
             <div id="vnp-play" class="vnp-play absolute top-0 left-0 w-[100%] h-[100%] flex items-center justify-center" onclick="start()">

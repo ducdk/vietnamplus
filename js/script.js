@@ -1,7 +1,7 @@
 AOS.init();
 
 
-const vnp_video_modau = document.getElementById('vnp-video-modau');
+const vnp_video_modau = ($(window).width() > 768) ? document.getElementById('vnp-video-modau') : document.getElementById('vnp-video-modau1');
 const vnp_play = document.getElementById('vnp-play');
 playState = 'pause';
 

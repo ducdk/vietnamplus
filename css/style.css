@@ -25,6 +25,15 @@
   background: rgb(190,63,62);
   background: linear-gradient(180deg, rgba(190,63,62,0.9073005911348915) 0%, rgba(0,0,0,0.7616423278295693) 80%);
 }
+
+.vnp-timeline-image-point-1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  position: absolute;
+  top: 10px;
+  left: 110px;
+}
 /* .dot {
 	position: fixed;
 	width: 10em;
@@ -177,6 +186,15 @@ body {
 }
 
 #vnp-video-modau {
+  object-fit: cover;
+  width: calc(100vw - 32px);
+  height: calc(100vh - 32px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#vnp-video-modau1 {
   object-fit: cover;
   width: calc(100vw - 32px);
   height: calc(100vh - 32px);
@@ -859,7 +877,15 @@ footer {
     font-size: 13px;
     font-weight: 400;
   }
-  
+
+  .vnp-timeline-image-point-1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    position: absolute;
+    top: 0px;
+    left: 80px;
+  }
 
   #vnp-timeline-check-point {
     height: 50px;

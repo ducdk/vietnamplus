@@ -264,6 +264,7 @@ function renderTimeline() {
                                     </linearGradient>
                                 </defs>
                             </svg>
+                            ${element.img !== "" ? `<img class="vnp-timeline-image-point-1" src="${element.img}" alt="" srcset="">`: ""}
                         </div>
                     </div>
                 </div>
