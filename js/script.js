@@ -1,5 +1,18 @@
-AOS.init();
+// function scenesMethod() {
+//     var scenes = document.querySelectorAll('.scene');
+//     console.log(scenes);
+//     for (let i = 0; i < scenes.length; i++) {
+//         var parallaxInstance = new Parallax(scenes[i], {
+//             relativeInput: true,
+//             clipRelativeInput: true,
+//         });
+//         console.log(parallaxInstance);
+//     }
+// }
 
+
+AOS.init();
+// scenesMethod();
 
 const vnp_video_modau = ($(window).width() > 768) ? document.getElementById('vnp-video-modau') : document.getElementById('vnp-video-modau1');
 const vnp_play = document.getElementById('vnp-play');
