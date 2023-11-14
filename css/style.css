@@ -247,6 +247,12 @@ body {
   min-height: 100vh;
 }
 
+.bg-gradient-process {
+  background: linear-gradient(90deg, rgba(205,20,20,1) 0%, rgba(255,162,52,1) 75%);
+  width: 0;
+}
+
+
 .vnp-dauan img {
   max-width: 610px;
 }
@@ -923,6 +929,15 @@ footer {
     top: unset!important;
     left: 40%!important;
     transform: rotate(180deg);
+  }
+
+  .demo-text .text {
+    font-size: 100px;
+    line-height: 1;
+    font-weight: 700;
+    font-family: "Noto Sans", sans-serif;
+    -webkit-text-stroke: 2px #ef622c;
+    color: transparent;
   }
 }
 

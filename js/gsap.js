@@ -67,6 +67,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 window.addEventListener("load", function () {
 
+
+    // gsap.fromTo( ".bg-1", {
+    //     backgroundColor: gsap.getProperty("html", "--dark")
+    // }, {
+    //     scrollTrigger: {
+    //         trigger: "#dauan",
+    //         scrub: true,
+    //         end: "bottom bottom",
+    //     },
+    //     backgroundColor: gsap.getProperty("html", "--light")
+    // });
+
     let chars = gsap.utils.toArray(".char");
 
     gsap.to(chars, {
@@ -84,12 +96,17 @@ window.addEventListener("load", function () {
 
 
     if ($(window).width() > 768) {
-        console.log($(window).width())
+        // console.log($(window).width())
         let pinBoxes = document.querySelectorAll(".vnp-dauan-list > *");
         let pinWrap = document.querySelector(".vnp-dauan-list");
         let pinWrapWidth = pinWrap.offsetWidth;
         let horizontalScrollLength = pinWrapWidth - window.innerWidth;
-      
+        
+        function removeProps(){  
+            console.log('Reverse Complete')
+            // is there something i can run here to remove the props?  
+          }
+          
       
         gsap.to(".vnp-dauan-list", {
           scrollTrigger: {
@@ -105,6 +122,21 @@ window.addEventListener("load", function () {
           x: -horizontalScrollLength,
           ease: "none"
         });
+
+        let tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: document.querySelector('#dauan'),
+              start: "top top",
+              end: pinWrapWidth,
+              scrub: true
+            },
+            onReverseComplete: () => removeProps()
+          })
+
+        let wordmark = document.querySelector('.bg-gradient-process');
+        tl.to(wordmark, {
+            width: "100vw"
+        })
 
         console.log("load")
     }
