@@ -1,6 +1,6 @@
 let data = [
     {
-        "time": "11/2018",
+        "time": "11/2008",
         "content": "VietnamPlus “lên sóng” vào tháng 11 năm 2008, phát hành bằng 6 ngôn ngữ (Việt, Anh, Pháp, Trung, Tây Ban Nha, Nga).",
         "img": "./images/timeline/a1.png"
     },
@@ -186,7 +186,7 @@ let data = [
 
     {
         "time": "23/01/2020",
-        "content": "Ra mắt Bản tin  m thanh (Podcast), phát trên các nền tảng Google Podcast, Apple Podcast, Spotify.",
+        "content": "Ra mắt Bản tin  âm thanh (Podcast), phát trên các nền tảng Google Podcast, Apple Podcast, Spotify.",
         "img": "./images/timeline/a16.png"
     },
     {

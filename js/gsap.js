@@ -68,16 +68,56 @@ gsap.registerPlugin(ScrollTrigger);
 window.addEventListener("load", function () {
 
 
-    // gsap.fromTo( ".bg-1", {
-    //     backgroundColor: gsap.getProperty("html", "--dark")
+    // gsap.fromTo( ".main", {
+    //     backgroundColor: 'white'
     // }, {
+    //     scrollTrigger: {
+    //         trigger: "#lyric",
+    //         scrub: true,
+    //         end: "bottom bottom",
+    //     },
+    //     backgroundColor: '#4C0C0D'
+    // });
+
+    // gsap.to( "", {
     //     scrollTrigger: {
     //         trigger: "#dauan",
     //         scrub: true,
     //         end: "bottom bottom",
     //     },
-    //     backgroundColor: gsap.getProperty("html", "--light")
+    //     backgroundColor: '#4C0C0D'
     // });
+
+    const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
+    scrollColorElems.forEach((colorSection, i) => {
+        const prevBg = i === 0 ? "" : 'white';
+        console.log(colorSection.dataset.bgcolor)
+
+        ScrollTrigger.create({
+            trigger: colorSection,
+            scroller: ".main",
+            start: "top 10%",
+            // end: "bottom bottom",
+            scrub: true,
+            onEnter: () => {
+                gsap.to("body", {
+                    scrub: true,
+                    backgroundColor: colorSection.dataset.bgcolor,
+                    overwrite: "auto"
+                })
+                // gsap.to("#dauan", {
+                //     backgroundColor: colorSection.dataset.bgcolor,
+                //     overwrite: "auto"
+                // })
+            },
+            onLeaveBack: () =>
+                gsap.to("body", {
+                    scrub: true,
+                    backgroundColor: prevBg,
+                    overwrite: "auto"
+                })
+        });
+    });
 
     let chars = gsap.utils.toArray(".char");
 
