@@ -88,36 +88,36 @@ window.addEventListener("load", function () {
     //     backgroundColor: '#4C0C0D'
     // });
 
-    const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
-    scrollColorElems.forEach((colorSection, i) => {
-        const prevBg = i === 0 ? "" : 'white';
-        console.log(colorSection.dataset.bgcolor)
+    // const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
+    // scrollColorElems.forEach((colorSection, i) => {
+    //     const prevBg = i === 0 ? "" : 'white';
+    //     console.log(colorSection.dataset.bgcolor)
 
-        ScrollTrigger.create({
-            trigger: colorSection,
-            scroller: ".main",
-            start: "top 10%",
-            // end: "bottom bottom",
-            scrub: true,
-            onEnter: () => {
-                gsap.to("body", {
-                    scrub: true,
-                    backgroundColor: colorSection.dataset.bgcolor,
-                    overwrite: "auto"
-                })
-                // gsap.to("#dauan", {
-                //     backgroundColor: colorSection.dataset.bgcolor,
-                //     overwrite: "auto"
-                // })
-            },
-            onLeaveBack: () =>
-                gsap.to("body", {
-                    scrub: true,
-                    backgroundColor: prevBg,
-                    overwrite: "auto"
-                })
-        });
-    });
+    //     ScrollTrigger.create({
+    //         trigger: colorSection,
+    //         scroller: ".main",
+    //         start: "top 10%",
+    //         // end: "bottom bottom",
+    //         scrub: true,
+    //         onEnter: () => {
+    //             gsap.to(".bg-1", {
+    //                 scrub: true,
+    //                 backgroundColor: colorSection.dataset.bgcolor,
+    //                 overwrite: "auto"
+    //             })
+    //             // gsap.to("#dauan", {
+    //             //     backgroundColor: colorSection.dataset.bgcolor,
+    //             //     overwrite: "auto"
+    //             // })
+    //         },
+    //         onLeaveBack: () =>
+    //             gsap.to(".bg-1", {
+    //                 scrub: true,
+    //                 backgroundColor: prevBg,
+    //                 overwrite: "auto"
+    //             })
+    //     });
+    // });
 
     let chars = gsap.utils.toArray(".char");
 
